@@ -1,0 +1,26 @@
+[Unit]
+Description=YEN's distributed currency daemon
+After=network.target
+
+[Service]
+User=cryptoyen
+Group=cryptoyen
+
+Type=forking
+PIDFile=/var/lib/cryptoyend/cryptoyend.pid
+
+ExecStart=/usr/bin/cryptoyend -daemon -pid=/var/lib/cryptoyend/cryptoyend.pid \
+          -conf=/etc/cryptoyen/cryptoyen.conf -datadir=/var/lib/cryptoyend
+
+ExecStop=-/usr/bin/cryptoyen-cli -conf=/etc/cryptoyen/cryptoyen.conf \
+         -datadir=/var/lib/cryptoyend stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

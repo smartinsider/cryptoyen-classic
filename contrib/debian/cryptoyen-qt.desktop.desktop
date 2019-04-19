@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YEN
+Comment=YEN P2P Cryptocurrency
+Exec=cryptoyen-qt %u
+Terminal=false
+Type=Application
+Icon=cryptoyen128
+MimeType=x-scheme-handler/cryptoyen;
+Categories=Office;Finance;
+Name[en_US]=cryptoyen-qt.desktop
