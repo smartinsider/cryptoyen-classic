@@ -608,10 +608,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;Komando-linio opcioj</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n bloko de tansakcio historo procesita</numerusform><numerusform>%n blokoj de tansakcio historo procesita</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Ĝisdatiĝante pliaj datumo: %p%</translation>
@@ -736,10 +732,6 @@
         <source>YEN Core client</source>
         <translation>YEN Kerno kliento</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to YEN network</source>
-        <translation><numerusform>%n aktiva ligo(j) al la YEN reto</numerusform><numerusform>%n aktiva ligo(j) al la YEN reto</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Ĝisdatiĝante kun reto...</translation>
@@ -760,25 +752,9 @@
         <source>Up to date</source>
         <translation>Ĝisdata</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n horo</numerusform><numerusform>%n horoj</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n tago</numerusform><numerusform>%n tagoj</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n semajno</numerusform><numerusform>%n semajnoj</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 kaj %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n jaro</numerusform><numerusform>%n jaroj</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -864,7 +840,7 @@ Muktisendi: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Monujo estas &lt;b&gt;ĉifrita&lt;/b&gt; kaj nuntempe &lt;b&gt;ŝlosita&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1122,8 +1098,8 @@ Muktisendi: %1</translation>
         <translation>Ĉi tiun etikedo ruĝiĝas se iu ajna ricevanto ricevas totalo pli malgranda ol %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Povas varii +/- %1 upiv per enigo.</translation>
+        <source>Can vary +/- %1 ucryptoyen per input.</source>
+        <translation>Povas varii +/- %1 ucryptoyen per enigo.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1216,6 +1192,17 @@ Muktisendi: %1</translation>
         <translation>Ne povas krei datumoj dosierujo ĉi tie.</translation>
     </message>
 </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formo</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -1460,42 +1447,8 @@ Muktisendi: %1</translation>
         <translation>(neniu etikedo)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>La enirita adreson:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>estas nevalida
-Bonvolu kontroku la adreson kaj riprovu</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Totala sumo de via multisendo vektoro estas super 100% de via stako rekompenco
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Bonvolu eniru 1 - 100 por porcento.</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Multisendo vektoro
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Forigita</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Ne eblis loki adreson
-</translation>
     </message>
 </context>
 <context>
@@ -1550,7 +1503,7 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Kvanto</translation>
+        <translation>Kvanto:</translation>
     </message>
     <message>
         <source>Add an input to fund the outputs</source>
@@ -1628,12 +1581,12 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Bonvolu elekti privata nivelo.</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 10000 YEN</source>
-        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 YEN por anonimigi 10000 YEN</translation>
+        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 2500 YEN</source>
+        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 YEN por anonimigi 2500 YEN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 10000 YEN</source>
-        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 YEN por anonimigi 10000 YEN</translation>
+        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 2500 YEN</source>
+        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 YEN por anonimigi 2500 YEN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1849,7 +1802,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Pago peto dosiero ne povas estas legi! Ĉi tio pivas esti kauzita por nevalida pago peto dosiero.</translation>
+        <translation>Pago peto dosiero ne povas estas legi! Ĉi tio cryptoyenas esti kauzita por nevalida pago peto dosiero.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
@@ -1887,7 +1840,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Kvanto</translation>
+        <translation>Kvanto:</translation>
     </message>
     <message>
         <source>zYEN Control</source>
@@ -1923,7 +1876,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Elektu antaŭan uzatan adreson</translation>
+        <translation>Elektu antaŭe uzatan adreson</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1949,7 +1902,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioritato</translation>
+        <translation>Prioritato:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -1961,7 +1914,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>no</source>
-        <translation>no</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>Bytes:</source>
@@ -1977,7 +1930,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Change:</source>
-        <translation>Ŝanĝo:</translation>
+        <translation>Ŝanĝu:</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -2037,6 +1990,10 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <message>
         <source>UNKNOWN</source>
         <translation>NEKONATA</translation>
+    </message>
+    <message>
+        <source>YEN Core</source>
+        <translation>YEN kerno</translation>
     </message>
     </context>
 <context>
@@ -2117,10 +2074,6 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>1&amp;semajno</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Uzi la sagojn supran kaj malsupran por esplori la historion, kaj &lt;b&gt;Ctr-L&lt;/b&gt; por malplenigi la ekraron.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Tajpu &lt;b&gt;helpo&lt;/b&gt; por superrigardi la disponeblajn komandojn.</translation>
     </message>
@@ -2183,6 +2136,10 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <source>Copy amount</source>
         <translation>Kopii kvanto</translation>
     </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopi adreson</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -2234,6 +2191,10 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Mesaĝo</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Adreso</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Sumo:</translation>
     </message>
@@ -2266,11 +2227,11 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Kvanto</translation>
+        <translation>Kvanto:</translation>
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioritato</translation>
+        <translation>Prioritato:</translation>
     </message>
     <message>
         <source>medium</source>
@@ -2282,7 +2243,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>no</source>
-        <translation>no</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -2290,7 +2251,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Change:</source>
-        <translation>Ŝanĝo:</translation>
+        <translation>Ŝanĝu:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
@@ -2354,7 +2315,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Konfirmu sendi monon</translation>
+        <translation>Konfirmu sendi monojn</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2377,7 +2338,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Elektu antaŭan uzatan adreson</translation>
+        <translation>Elektu antaŭe uzatan adreson</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2415,7 +2376,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Choose previously used address</source>
-        <translation>Elektu antaŭan uzatan adreson</translation>
+        <translation>Elektu antaŭe uzatan adreson</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2447,7 +2408,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>La enirita adreso ne rilatas al ŝlosilo</translation>
+        <translation>La enirita adreso ne rilatas al ŝlosilo.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -2473,12 +2434,4092 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>La Dash kerno programistoj</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>La PIVX kerno programistoj</translation>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
     </message>
     <message>
-        <source>The HUZU Core developers</source>
-        <translation>La HUZU kerno programistoj</translation>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>La ZIJA kerno programistoj</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>La YEN kerno programistoj</translation>
     </message>
     <message>
         <source>The ZIJA Core developers</source>
@@ -2670,11 +6711,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <source>zYEN</source>
         <translation>zYEN</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Estas elspezebla</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>cryptoyen-core</name>
     <message>

@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2018 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
+// Copyright (c) 2015-2019 The PIVX developers
+// Copyright (c) 2018 The HUZU developers
 // Copyright (c) 2018-2019 The ZIJA developers
 // Copyright (c) 2019 The YEN developers
 // Distributed under the MIT software license, see the accompanying
@@ -414,10 +414,10 @@ bool CTxMemPool::addUnchecked(const uint256& hash, const CTxMemPoolEntry& entry)
     {
         mapTx[hash] = entry;
         const CTransaction& tx = mapTx[hash].GetTx();
-        if(!tx.IsZerocoinSpend()) {
+        
             for (unsigned int i = 0; i < tx.vin.size(); i++)
                 mapNextTx[tx.vin[i].prevout] = CInPoint(&tx, i);
-        }
+        
         nTransactionsUpdated++;
         totalTxSize += entry.GetTxSize();
     }
@@ -571,10 +571,11 @@ void CTxMemPool::check(const CCoinsViewCache* pcoins) const
                 assert(coins && coins->IsAvailable(txin.prevout.n));
             }
             // Check whether its inputs are marked in mapNextTx.
-            std::map<COutPoint, CInPoint>::const_iterator it3 = mapNextTx.find(txin.prevout);
-            assert(it3 != mapNextTx.end());
-            assert(it3->second.ptx == &tx);
-            assert(it3->second.n == i);
+                std::map<COutPoint, CInPoint>::const_iterator it3 = mapNextTx.find(txin.prevout);
+                assert(it3 != mapNextTx.end());
+                assert(it3->second.ptx == &tx);
+                assert(it3->second.n == i);
+           
             i++;
         }
         if (fDependsWait)

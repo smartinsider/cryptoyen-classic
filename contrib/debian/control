@@ -1,8 +1,8 @@
 Source: cryptoyen
 Section: utils
 Priority: optional
-Maintainer: Smart Insider <smartyinsider@gmail.com> ***TODO***
-Uploaders: Smart Insider <smartyinsider@gmail.com> ***TODO***
+Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
+Uploaders: Micah Anderson <micah@debian.org> ***TODO***
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: https://cryptoyen.icu
-Vcs-Git: git://github.com/smartinsider/cryptoyen.git
-Vcs-Browser: http://github.com/smartinsider/cryptoyen
+Vcs-Git: git://github.com/YEN-Project/YEN.git
+Vcs-Browser: http://github.com/YEN-Project/YEN
 
 Package: cryptoyend
 Architecture: any

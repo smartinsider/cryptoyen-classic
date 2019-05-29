@@ -1,7 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
-// Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
 // Copyright (c) 2018-2019 The ZIJA developers
 // Copyright (c) 2019 The YEN developers
 // Distributed under the MIT software license, see the accompanying
@@ -12,7 +10,7 @@
 #include "primitives/transaction.h"
 #include "main.h"
 #include "httpserver.h"
-#include "rpcserver.h"
+#include "rpc/server.h"
 #include "streams.h"
 #include "sync.h"
 #include "txmempool.h"

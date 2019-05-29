@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GovernancePage</class>
+ <widget class="QWidget" name="GovernancePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>968</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="topLayout" stretch="0">
+   <property name="leftMargin">
+    <number>9</number>
+   </property>
+   <property name="topMargin">
+    <number>9</number>
+   </property>
+   <property name="rightMargin">
+    <number>9</number>
+   </property>
+   <property name="bottomMargin">
+    <number>9</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_Master" stretch="0,1">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     
+		
+		
+		
+		
+		<item> 
+		 
+				 
+			<widget class="QFrame" name="frame_ytm_msg">
+				  
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+				
+			<property name="minimumSize">
+             <size>
+              <width>600</width>
+              <height>240</height>
+             </size>
+            </property>
+				
+			<property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>240</height>
+             </size>
+            </property>
+				
+               <layout class="QGridLayout" name="gridLayout">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="YtmL1">
+					<property name="font">
+					 <font>
+					  <weight>75</weight>
+					  <bold>true</bold>
+					 </font>
+					</property>					 
+                  <property name="text">
+                   <string>Youtube Mining Function: </string>
+                  </property>
+                 </widget>
+                </item>
+				   
+				   
+                <item row="1" column="0">
+                 <widget class="QLabel" name="YtmL2">
+					 <property name="maximumSize">
+					 <size>
+					  <width>16777215</width>
+					  <height>60</height>
+					 </size>
+					</property>
+                  <property name="text">
+                   <string>The wallet is not currently ready for the use of YouTube mining,</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+					
+                 <widget class="QLabel" name="YtmL3">
+                  <property name="text">
+                   <string>however you can still visit the tab in the wallet and see where it will be. </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="YtmL4">
+                  <property name="text">
+                   <string>It will be ready to use hopefully in an update in the coming weeks.</string>
+                  </property>
+                 </widget>
+                </item>
+			</layout>
+          </widget>   
+		 
+		 
+     </item>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

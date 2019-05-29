@@ -1544,32 +1544,32 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 YEN</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 YEN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 2500 YEN</source>
+        <translation>Use 2 separate masternodes to mix funds up to 2500 YEN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 YEN</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 YEN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 2500 YEN</source>
+        <translation>Use 8 separate masternodes to mix funds up to 2500 YEN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 10000 YEN</source>
-        <translation>This option is the quickest and will cost about ~0.025 YEN to anonymize 10000 YEN</translation>
+        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 2500 YEN</source>
+        <translation>This option is the quickest and will cost about ~0.025 YEN to anonymize 2500 YEN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 10000 YEN</source>
-        <translation>This option is moderately fast and will cost about 0.05 YEN to anonymize 10000 YEN</translation>
+        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 2500 YEN</source>
+        <translation>This option is moderately fast and will cost about 0.05 YEN to anonymize 2500 YEN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 YEN per 10000 YEN you anonymize.</source>
-        <translation>0.1 YEN per 10000 YEN you anonymize.</translation>
+        <source>0.1 YEN per 2500 YEN you anonymize.</source>
+        <translation>0.1 YEN per 2500 YEN you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -2996,10 +2996,6 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>The recipient address is not valid, please recheck.</translation>
     </message>
     <message>
-        <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(obfuscation requires this amount to be rounded up to the nearest %1).</translation>
-    </message>
-    <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
         <translation> split into %1 outputs using the UTXO splitter.</translation>
     </message>
@@ -3292,12 +3288,4092 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>The PIVX Core developers</translation>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
     </message>
     <message>
-        <source>The HUZU Core developers</source>
-        <translation>The HUZU Core developers</translation>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>The ZIJA Core developers</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>The YEN Core developers</translation>
     </message>
     <message>
         <source>The ZIJA Core developers</source>
@@ -4126,12 +8202,12 @@ for example: alertnotify=echo %%s | mail -s "YEN Alert" admin@foo.com
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 YEN.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 YEN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 2500 YEN.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 2500 YEN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 YEN.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 YEN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 2500 YEN.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 2500 YEN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4294,20 +8370,8 @@ for example: alertnotify=echo %%s | mail -s "YEN Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The HUZU Core Developers</source>
-        <translation>Copyright (C) 2015-%i The HUZU Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The ZIJA Core Developers</source>
-        <translation>Copyright (C) %i The ZIJA Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The YEN Core Developers</source>
-        <translation>Copyright (C) %i The YEN Core Developers</translation>
+        <source>Copyright (C) 2015-%i The YEN Core Developers</source>
+        <translation>Copyright (C) 2015-%i The YEN Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

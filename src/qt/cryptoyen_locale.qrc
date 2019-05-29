@@ -6,6 +6,7 @@
         <file alias="da">locale/cryptoyen_da.qm</file>
         <file alias="de">locale/cryptoyen_de.qm</file>
         <file alias="en">locale/cryptoyen_en.qm</file>
+        <file alias="en_GB">locale/cryptoyen_en_GB.qm</file>
         <file alias="en_US">locale/cryptoyen_en_US.qm</file>
         <file alias="eo">locale/cryptoyen_eo.qm</file>
         <file alias="es">locale/cryptoyen_es.qm</file>

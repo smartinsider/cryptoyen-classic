@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
+// Copyright (c) 2018-2019 The PIVX developers
+// Copyright (c) 2018-2019 The HUZU developers
 // Copyright (c) 2018-2019 The ZIJA developers
 // Copyright (c) 2019 The YEN developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -30,6 +30,16 @@ namespace Ui
 {
 class CoinControlDialog;
 }
+
+class CCoinControlWidgetItem : public QTreeWidgetItem
+{
+public:
+    explicit CCoinControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CCoinControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CCoinControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+
+    bool operator<(const QTreeWidgetItem &other) const;
+};
 
 class CoinControlDialog : public QDialog
 {
@@ -63,7 +73,6 @@ private:
     QAction* lockAction;
     QAction* unlockAction;
 
-    QString strPad(QString, int, QString);
     void sortView(int, Qt::SortOrder);
     void updateView();
 
@@ -78,32 +87,8 @@ private:
         COLUMN_PRIORITY,
         COLUMN_TXHASH,
         COLUMN_VOUT_INDEX,
-        COLUMN_AMOUNT_INT64,
-        COLUMN_PRIORITY_INT64,
-        COLUMN_DATE_INT64
     };
-
-    // some columns have a hidden column containing the value used for sorting
-    int getMappedColumn(int column, bool fVisibleColumn = true)
-    {
-        if (fVisibleColumn) {
-            if (column == COLUMN_AMOUNT_INT64)
-                return COLUMN_AMOUNT;
-            else if (column == COLUMN_PRIORITY_INT64)
-                return COLUMN_PRIORITY;
-            else if (column == COLUMN_DATE_INT64)
-                return COLUMN_DATE;
-        } else {
-            if (column == COLUMN_AMOUNT)
-                return COLUMN_AMOUNT_INT64;
-            else if (column == COLUMN_PRIORITY)
-                return COLUMN_PRIORITY_INT64;
-            else if (column == COLUMN_DATE)
-                return COLUMN_DATE_INT64;
-        }
-
-        return column;
-    }
+    friend class CCoinControlWidgetItem;
 
 private slots:
     void showMenu(const QPoint&);

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YEN
+Comment=YEN P2P Cryptocurrency
+Comment[fr]=YEN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=YEN, eşten eşe kriptografik sanal para birimi
+Exec=cryptoyen-qt %u
+Terminal=false
+Type=Application
+Icon=cryptoyen128
+MimeType=x-scheme-handler/cryptoyen;
+Categories=Office;Finance;

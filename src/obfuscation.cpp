@@ -1,8 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
-// Copyright (c) 2018-2019 The ZIJA developers
-// Copyright (c) 2019 The YEN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,7 +15,6 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
-#include <boost/lexical_cast.hpp>
 
 #include <algorithm>
 #include <boost/assign/list_of.hpp>
@@ -434,6 +430,9 @@ bool CObfuscationPool::SetCollateralAddress(std::string strAddress)
 //
 void CObfuscationPool::UnlockCoins()
 {
+    if (!pwalletMain)
+        return;
+
     while (true) {
         TRY_LOCK(pwalletMain->cs_wallet, lockWallet);
         if (!lockWallet) {
@@ -605,7 +604,7 @@ void CObfuscationPool::CheckFinalTransaction()
         // sign a message
 
         int64_t sigTime = GetAdjustedTime();
-        std::string strMessage = txNew.GetHash().ToString() + boost::lexical_cast<std::string>(sigTime);
+        std::string strMessage = txNew.GetHash().ToString() + std::to_string(sigTime);
         std::string strError = "";
         std::vector<unsigned char> vchSig;
         CKey key2;
@@ -890,7 +889,7 @@ void CObfuscationPool::CheckTimeout()
 //
 void CObfuscationPool::CheckForCompleteQueue()
 {
-    if (!fEnableZeromint && !fMasterNode) return;
+    if (!fEnableObfuscation && !fMasterNode) return;
 
     /* Check to see if we're ready for submissions from clients */
     //
@@ -1149,7 +1148,7 @@ void CObfuscationPool::SendObfuscationDenominate(std::vector<CTxIn>& vin, std::v
     if (!CheckDiskSpace()) {
         UnlockCoins();
         SetNull();
-        fEnableZeromint = false;
+        fEnableObfuscation = false;
         LogPrintf("CObfuscationPool::SendObfuscationDenominate() - Not enough disk space, disabling Obfuscation.\n");
         return;
     }
@@ -1245,7 +1244,6 @@ bool CObfuscationPool::StatusUpdate(int newState, int newEntriesCount, int newAc
             LogPrintf("CObfuscationPool::StatusUpdate - entry not accepted by Masternode \n");
             UnlockCoins();
             UpdateState(POOL_STATUS_ACCEPTING_ENTRIES);
-            DoAutomaticDenominating(); //try another Masternode
         }
         if (sessionFoundMasternode) return true;
     }
@@ -1381,271 +1379,6 @@ void CObfuscationPool::ClearLastMessage()
 //
 // This does NOT run by default for daemons, only for QT.
 //
-bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
-{
-    return false;  // Disabled until Obfuscation is completely removed
-
-    if (!fEnableZeromint) return false;
-    if (fMasterNode) return false;
-    if (state == POOL_STATUS_ERROR || state == POOL_STATUS_SUCCESS) return false;
-    if (GetEntriesCount() > 0) {
-        strAutoDenomResult = _("Mixing in progress...");
-        return false;
-    }
-
-    TRY_LOCK(cs_obfuscation, lockDS);
-    if (!lockDS) {
-        strAutoDenomResult = _("Lock is already in place.");
-        return false;
-    }
-
-    if (!masternodeSync.IsBlockchainSynced()) {
-        strAutoDenomResult = _("Can't mix while sync in progress.");
-        return false;
-    }
-
-    if (!fDryRun && pwalletMain->IsLocked()) {
-        strAutoDenomResult = _("Wallet is locked.");
-        return false;
-    }
-
-    if (chainActive.Tip()->nHeight - cachedLastSuccess < minBlockSpacing) {
-        LogPrintf("CObfuscationPool::DoAutomaticDenominating - Last successful Obfuscation action was too recent\n");
-        strAutoDenomResult = _("Last successful Obfuscation action was too recent.");
-        return false;
-    }
-
-    if (mnodeman.size() == 0) {
-        LogPrint("obfuscation", "CObfuscationPool::DoAutomaticDenominating - No Masternodes detected\n");
-        strAutoDenomResult = _("No Masternodes detected.");
-        return false;
-    }
-
-    // ** find the coins we'll use
-    std::vector<CTxIn> vCoins;
-    CAmount nValueMin = CENT;
-    CAmount nValueIn = 0;
-
-    CAmount nOnlyDenominatedBalance;
-    CAmount nBalanceNeedsDenominated;
-
-    // should not be less than fees in OBFUSCATION_COLLATERAL + few (lets say 5) smallest denoms
-    CAmount nLowestDenom = OBFUSCATION_COLLATERAL + obfuScationDenominations[obfuScationDenominations.size() - 1] * 5;
-
-    // if there are no OBF collateral inputs yet
-    if (!pwalletMain->HasCollateralInputs())
-        // should have some additional amount for them
-        nLowestDenom += OBFUSCATION_COLLATERAL * 4;
-
-    CAmount nBalanceNeedsAnonymized = nAnonymizeCryptoYenAmount * COIN - pwalletMain->GetAnonymizedBalance();
-
-    // if balanceNeedsAnonymized is more than pool max, take the pool max
-    if (nBalanceNeedsAnonymized > OBFUSCATION_POOL_MAX) nBalanceNeedsAnonymized = OBFUSCATION_POOL_MAX;
-
-    // if balanceNeedsAnonymized is more than non-anonymized, take non-anonymized
-    CAmount nAnonymizableBalance = pwalletMain->GetAnonymizableBalance();
-    if (nBalanceNeedsAnonymized > nAnonymizableBalance) nBalanceNeedsAnonymized = nAnonymizableBalance;
-
-    if (nBalanceNeedsAnonymized < nLowestDenom) {
-        LogPrintf("DoAutomaticDenominating : No funds detected in need of denominating \n");
-        strAutoDenomResult = _("No funds detected in need of denominating.");
-        return false;
-    }
-
-    LogPrint("obfuscation", "DoAutomaticDenominating : nLowestDenom=%d, nBalanceNeedsAnonymized=%d\n", nLowestDenom, nBalanceNeedsAnonymized);
-
-    // select coins that should be given to the pool
-    if (!pwalletMain->SelectCoinsDark(nValueMin, nBalanceNeedsAnonymized, vCoins, nValueIn, 0, nZeromintPercentage)) {
-        nValueIn = 0;
-        vCoins.clear();
-
-        if (pwalletMain->SelectCoinsDark(nValueMin, 9999999 * COIN, vCoins, nValueIn, -2, 0)) {
-            nOnlyDenominatedBalance = pwalletMain->GetDenominatedBalance(true) + pwalletMain->GetDenominatedBalance() - pwalletMain->GetAnonymizedBalance();
-            nBalanceNeedsDenominated = nBalanceNeedsAnonymized - nOnlyDenominatedBalance;
-
-            if (nBalanceNeedsDenominated > nValueIn) nBalanceNeedsDenominated = nValueIn;
-
-            if (nBalanceNeedsDenominated < nLowestDenom) return false; // most likely we just waiting for denoms to confirm
-            if (!fDryRun) return CreateDenominated(nBalanceNeedsDenominated);
-
-            return true;
-        } else {
-            LogPrintf("DoAutomaticDenominating : Can't denominate - no compatible inputs left\n");
-            strAutoDenomResult = _("Can't denominate: no compatible inputs left.");
-            return false;
-        }
-    }
-
-    if (fDryRun) return true;
-
-    nOnlyDenominatedBalance = pwalletMain->GetDenominatedBalance(true) + pwalletMain->GetDenominatedBalance() - pwalletMain->GetAnonymizedBalance();
-    nBalanceNeedsDenominated = nBalanceNeedsAnonymized - nOnlyDenominatedBalance;
-
-    //check if we have should create more denominated inputs
-    if (nBalanceNeedsDenominated > nOnlyDenominatedBalance) return CreateDenominated(nBalanceNeedsDenominated);
-
-    //check if we have the collateral sized inputs
-    if (!pwalletMain->HasCollateralInputs()) return !pwalletMain->HasCollateralInputs(false) && MakeCollateralAmounts();
-
-    std::vector<CTxOut> vOut;
-
-    // initial phase, find a Masternode
-    if (!sessionFoundMasternode) {
-        // Clean if there is anything left from previous session
-        UnlockCoins();
-        SetNull();
-
-        int nUseQueue = rand() % 100;
-        UpdateState(POOL_STATUS_ACCEPTING_ENTRIES);
-
-        if (pwalletMain->GetDenominatedBalance(true) > 0) { //get denominated unconfirmed inputs
-            LogPrintf("DoAutomaticDenominating -- Found unconfirmed denominated outputs, will wait till they confirm to continue.\n");
-            strAutoDenomResult = _("Found unconfirmed denominated outputs, will wait till they confirm to continue.");
-            return false;
-        }
-
-        //check our collateral nad create new if needed
-        std::string strReason;
-        CValidationState state;
-        if (txCollateral == CMutableTransaction()) {
-            if (!pwalletMain->CreateCollateralTransaction(txCollateral, strReason)) {
-                LogPrintf("% -- create collateral error:%s\n", __func__, strReason);
-                return false;
-            }
-        } else {
-            if (!IsCollateralValid(txCollateral)) {
-                LogPrintf("%s -- invalid collateral, recreating...\n", __func__);
-                if (!pwalletMain->CreateCollateralTransaction(txCollateral, strReason)) {
-                    LogPrintf("%s -- create collateral error: %s\n", __func__, strReason);
-                    return false;
-                }
-            }
-        }
-
-        //if we've used 90% of the Masternode list then drop all the oldest first
-        int nThreshold = (int)(mnodeman.CountEnabled(ActiveProtocol()) * 0.9);
-        LogPrint("obfuscation", "Checking vecMasternodesUsed size %d threshold %d\n", (int)vecMasternodesUsed.size(), nThreshold);
-        while ((int)vecMasternodesUsed.size() > nThreshold) {
-            vecMasternodesUsed.erase(vecMasternodesUsed.begin());
-            LogPrint("obfuscation", "  vecMasternodesUsed size %d threshold %d\n", (int)vecMasternodesUsed.size(), nThreshold);
-        }
-
-        //don't use the queues all of the time for mixing
-        if (nUseQueue > 33) {
-            // Look through the queues and see if anything matches
-            BOOST_FOREACH (CObfuscationQueue& dsq, vecObfuscationQueue) {
-                CService addr;
-                if (dsq.time == 0) continue;
-
-                if (!dsq.GetAddress(addr)) continue;
-                if (dsq.IsExpired()) continue;
-
-                int protocolVersion;
-                if (!dsq.GetProtocolVersion(protocolVersion)) continue;
-                if (protocolVersion < ActiveProtocol()) continue;
-
-                //non-denom's are incompatible
-                if ((dsq.nDenom & (1 << 4))) continue;
-
-                bool fUsed = false;
-                //don't reuse Masternodes
-                BOOST_FOREACH (CTxIn usedVin, vecMasternodesUsed) {
-                    if (dsq.vin == usedVin) {
-                        fUsed = true;
-                        break;
-                    }
-                }
-                if (fUsed) continue;
-
-                std::vector<CTxIn> vTempCoins;
-                std::vector<COutput> vTempCoins2;
-                // Try to match their denominations if possible
-                if (!pwalletMain->SelectCoinsByDenominations(dsq.nDenom, nValueMin, nBalanceNeedsAnonymized, vTempCoins, vTempCoins2, nValueIn, 0, nZeromintPercentage)) {
-                    LogPrintf("DoAutomaticDenominating --- Couldn't match denominations %d\n", dsq.nDenom);
-                    continue;
-                }
-
-                CMasternode* pmn = mnodeman.Find(dsq.vin);
-                if (pmn == NULL) {
-                    LogPrintf("DoAutomaticDenominating --- dsq vin %s is not in masternode list!", dsq.vin.ToString());
-                    continue;
-                }
-
-                LogPrintf("DoAutomaticDenominating --- attempt to connect to masternode from queue %s\n", pmn->addr.ToString());
-                lastTimeChanged = GetTimeMillis();
-
-                // connect to Masternode and submit the queue request
-                CNode* pnode = ConnectNode((CAddress)addr, NULL, true);
-                if (pnode != NULL) {
-                    pSubmittedToMasternode = pmn;
-                    vecMasternodesUsed.push_back(dsq.vin);
-                    sessionDenom = dsq.nDenom;
-
-                    pnode->PushMessage("dsa", sessionDenom, txCollateral);
-                    LogPrintf("DoAutomaticDenominating --- connected (from queue), sending dsa for %d - %s\n", sessionDenom, pnode->addr.ToString());
-                    strAutoDenomResult = _("Mixing in progress...");
-                    dsq.time = 0; //remove node
-                    return true;
-                } else {
-                    LogPrintf("DoAutomaticDenominating --- error connecting \n");
-                    strAutoDenomResult = _("Error connecting to Masternode.");
-                    dsq.time = 0; //remove node
-                    continue;
-                }
-            }
-        }
-
-        // do not initiate queue if we are a liquidity proveder to avoid useless inter-mixing
-        if (nLiquidityProvider) return false;
-
-        int i = 0;
-
-        // otherwise, try one randomly
-        while (i < 10) {
-            CMasternode* pmn = mnodeman.FindRandomNotInVec(vecMasternodesUsed, ActiveProtocol());
-            if (pmn == NULL) {
-                LogPrintf("DoAutomaticDenominating --- Can't find random masternode!\n");
-                strAutoDenomResult = _("Can't find random Masternode.");
-                return false;
-            }
-
-            if (pmn->nLastDsq != 0 &&
-                pmn->nLastDsq + mnodeman.CountEnabled(ActiveProtocol()) / 5 > mnodeman.nDsqCount) {
-                i++;
-                continue;
-            }
-
-            lastTimeChanged = GetTimeMillis();
-            LogPrintf("DoAutomaticDenominating --- attempt %d connection to Masternode %s\n", i, pmn->addr.ToString());
-            CNode* pnode = ConnectNode((CAddress)pmn->addr, NULL, true);
-            if (pnode != NULL) {
-                pSubmittedToMasternode = pmn;
-                vecMasternodesUsed.push_back(pmn->vin);
-
-                std::vector<CAmount> vecAmounts;
-                pwalletMain->ConvertList(vCoins, vecAmounts);
-                // try to get a single random denom out of vecAmounts
-                while (sessionDenom == 0)
-                    sessionDenom = GetDenominationsByAmounts(vecAmounts);
-
-                pnode->PushMessage("dsa", sessionDenom, txCollateral);
-                LogPrintf("DoAutomaticDenominating --- connected, sending dsa for %d\n", sessionDenom);
-                strAutoDenomResult = _("Mixing in progress...");
-                return true;
-            } else {
-                vecMasternodesUsed.push_back(pmn->vin); // postpone MN we wasn't able to connect to
-                i++;
-                continue;
-            }
-        }
-
-        strAutoDenomResult = _("No compatible Masternode found.");
-        return false;
-    }
-
-    strAutoDenomResult = _("Mixing in progress...");
-    return false;
-}
 
 
 bool CObfuscationPool::PrepareObfuscationDenominate()
@@ -1653,14 +1386,14 @@ bool CObfuscationPool::PrepareObfuscationDenominate()
     std::string strError = "";
     // Submit transaction to the pool if we get here
     // Try to use only inputs with the same number of rounds starting from lowest number of rounds possible
-    for (int i = 0; i < nZeromintPercentage; i++) {
+    for (int i = 0; i < nObfuscationRounds; i++) {
         strError = pwalletMain->PrepareObfuscationDenominate(i, i + 1);
         LogPrintf("DoAutomaticDenominating : Running Obfuscation denominate for %d rounds. Return '%s'\n", i, strError);
         if (strError == "") return true;
     }
 
     // We failed? That's strange but let's just make final attempt and try to mix everything
-    strError = pwalletMain->PrepareObfuscationDenominate(0, nZeromintPercentage);
+    strError = pwalletMain->PrepareObfuscationDenominate(0, nObfuscationRounds);
     LogPrintf("DoAutomaticDenominating : Running Obfuscation denominate for all rounds. Return '%s'\n", strError);
     if (strError == "") return true;
 
@@ -2114,7 +1847,7 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         BOOST_FOREACH (CTxOut out, txVin.vout) {
-            if (out.nValue == Params().MasternodeCollateral()) {
+            if (out.nValue == 2500 * COIN) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }
@@ -2187,7 +1920,7 @@ bool CObfuscationQueue::Sign()
 {
     if (!fMasterNode) return false;
 
-    std::string strMessage = vin.ToString() + boost::lexical_cast<std::string>(nDenom) + boost::lexical_cast<std::string>(time) + boost::lexical_cast<std::string>(ready);
+    std::string strMessage = vin.ToString() + std::to_string(nDenom) + std::to_string(time) + std::to_string(ready);
 
     CKey key2;
     CPubKey pubkey2;
@@ -2227,7 +1960,7 @@ bool CObfuscationQueue::CheckSignature()
     CMasternode* pmn = mnodeman.Find(vin);
 
     if (pmn != NULL) {
-        std::string strMessage = vin.ToString() + boost::lexical_cast<std::string>(nDenom) + boost::lexical_cast<std::string>(time) + boost::lexical_cast<std::string>(ready);
+        std::string strMessage = vin.ToString() + std::to_string(nDenom) + std::to_string(time) + std::to_string(ready);
 
         std::string errorMessage = "";
         if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
@@ -2319,9 +2052,6 @@ void ThreadCheckObfuScationPool()
             obfuScationPool.CheckTimeout();
             obfuScationPool.CheckForCompleteQueue();
 
-            if (obfuScationPool.GetState() == POOL_STATUS_IDLE && c % 15 == 0) {
-                obfuScationPool.DoAutomaticDenominating();
-            }
         }
     }
 }

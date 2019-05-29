@@ -1,8 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
-// Copyright (c) 2018-2019 The ZIJA developers
-// Copyright (c) 2019 The YEN developers
+// Copyright (c) 2015-2017 The YEN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -71,21 +68,23 @@ bool CMasternodeConfig::read(std::string& strErr)
             return false;
         }
 
-        // if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        //     if (port != 37701) {
-        //         strErr = _("Invalid port detected in masternode.conf") + "\n" +
-        //                  strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-        //                  _("(must be 37701 for mainnet)");
-        //         streamConfig.close();
-        //         return false;
-        //     }
-        // } else if (port == 37701) {
-        //     strErr = _("Invalid port detected in masternode.conf") + "\n" +
-        //              strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-        //              _("(37701 could be used only on mainnet)");
-        //     streamConfig.close();
-        //     return false;
-        // }
+	// MULTY MASTERNODE ACTIVATE
+
+        //if (Params().NetworkID() == CBaseChainParams::MAIN) {
+        //    if (port != 37701) {
+        //        strErr = _("Invalid port detected in masternode.conf") + "\n" +
+        //                 strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
+        //                 _("(must be 37701 for mainnet)");
+        //        streamConfig.close();
+        //        return false;
+        //    }
+        //} else if (port == 37701) {
+        //    strErr = _("Invalid port detected in masternode.conf") + "\n" +
+        //             strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
+        //             _("(37701 could be used only on mainnet)");
+        //    streamConfig.close();
+        //    return false;
+        //}
 
 
         add(alias, ip, privKey, txHash, outputIndex);

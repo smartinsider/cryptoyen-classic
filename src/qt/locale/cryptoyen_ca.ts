@@ -516,7 +516,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i bloquejat&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -845,6 +845,17 @@
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulari</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1084,30 +1095,8 @@
         <translation>(sense etiqueta)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>L'adreça introduïda:
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Si us plau introdueix 1 - 100 per al percentatge</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vector MultiSend
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Eliminat</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>No s'ha trobat l'adreça
-</translation>
     </message>
 </context>
 <context>
@@ -1148,24 +1137,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 YEN</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 YEN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 2500 YEN</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 2500 YEN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 YEN</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 YEN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 2500 YEN</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 2500 YEN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 10000 YEN</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 YEN per anonimitzar 10000 YEN</translation>
+        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 2500 YEN</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 YEN per anonimitzar 2500 YEN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 10000 YEN</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 YEN per anonimitzar 10000 YEN</translation>
+        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 2500 YEN</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 YEN per anonimitzar 2500 YEN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1302,10 +1291,6 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zYEN</source>
-        <translation>zYEN</translation>
-    </message>
-    <message>
         <source>0.000 000 00 YEN</source>
         <translation>0.000 000 00 YEN</translation>
     </message>
@@ -1320,10 +1305,6 @@
     <message>
         <source>Amount:</source>
         <translation>Import:</translation>
-    </message>
-    <message>
-        <source>0 zYEN</source>
-        <translation>0 zYEN</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1404,7 +1385,11 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>YEN Core</source>
+        <translation>YEN Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1522,6 +1507,10 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>I&amp;mport:</translation>
+    </message>
+    <message>
         <source>Remove</source>
         <translation>Elimina</translation>
     </message>
@@ -1536,6 +1525,10 @@
     <message>
         <source>Copy amount</source>
         <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia l'adreça</translation>
     </message>
 </context>
 <context>
@@ -1582,6 +1575,10 @@
     <message>
         <source>Message</source>
         <translation>Missatge</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adreça</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1967,10 +1964,6 @@
     <message>
         <source>0</source>
         <translation>0</translation>
-    </message>
-    <message>
-        <source>zYEN</source>
-        <translation>zYEN</translation>
     </message>
     </context>
 <context>

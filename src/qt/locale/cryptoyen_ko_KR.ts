@@ -433,10 +433,6 @@
         <translation>겨래내역 보기</translation>
     </message>
     <message>
-        <source>Privacy Actions for zYEN</source>
-        <translation>zYEN 생성 및 관리</translation>
-    </message>
-    <message>
         <source>E&amp;xit</source>
         <translation>종&amp;료</translation>
     </message>
@@ -608,10 +604,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;명령행 옵션</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n 블록의 거래내역 확인됨</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>추가 데이터 동기화: %p%</translation>
@@ -736,10 +728,6 @@
         <source>YEN Core client</source>
         <translation>YEN Core 클라이언트</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to YEN network</source>
-        <translation><numerusform>%n 개의 YEN 네트웍에 연결됨</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>네트워크 동기화중...</translation>
@@ -760,25 +748,9 @@
         <source>Up to date</source>
         <translation>최신</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n 시간</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n 일</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n 주</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 그리고 %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n 년</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -864,7 +836,7 @@ Address: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>지갑은 &lt;b&gt;암호화&lt;/ b&gt;되어 있으며 현재 &lt;b&gt;잠겨 있습니다&lt;/ b&gt;.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1130,8 +1102,8 @@ Address: %4
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Can vary +/- %1 upiv per input.</translation>
+        <source>Can vary +/- %1 ucryptoyen per input.</source>
+        <translation>Can vary +/- %1 ucryptoyen per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1224,6 +1196,17 @@ Address: %4
         <translation>여기에 디렉토리를 만들 수 없습니다.</translation>
     </message>
 </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Form</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -1542,48 +1525,8 @@ MultiSend will not be activated unless you have clicked Activate</source>
         <translation>(라벨 없음)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>입력된 주소:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>올바르지 않습니다.
-주소를 확인하고 다시 시도해주세요.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>다중전송 벡터의 총 금액이 스테이크 보상 금액의 100 % 이상입니다
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>퍼센트로 1 - 100을 입력하십시오.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>MultiSend를 메모리에 저장했지만 데이터베이스에 대한 속성 저장에 실패했습니다.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>다중전송 벡터
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>제거됨</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>주소를 찾을 수 없습니다
-</translation>
     </message>
 </context>
 <context>
@@ -1780,32 +1723,32 @@ Please be patient after clicking import.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 YEN</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 YEN 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 2500 YEN</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 2500 YEN 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 YEN</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 YEN 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 2500 YEN</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 2500 YEN 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 10000 YEN</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 YEN 익명화에 약 ~0.025 YEN의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 YEN to anonymize 2500 YEN</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 2500 YEN 익명화에 약 ~0.025 YEN의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 10000 YEN</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 YEN 익명화에 약 0.05 YEN의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 YEN to anonymize 2500 YEN</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 2500 YEN 익명화에 약 0.05 YEN의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 YEN per 10000 YEN you anonymize.</source>
-        <translation>10000 YEN 익명화에 0.1 YEN 가 듭니다.</translation>
+        <source>0.1 YEN per 2500 YEN you anonymize.</source>
+        <translation>2500 YEN 익명화에 0.1 YEN 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1946,30 +1889,6 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
-    </message>
-    <message>
-        <source>Enable automatic minting of YEN units to zYEN</source>
-        <translation>보상받은 YEN를 zYEN로 자동변환 활성화</translation>
-    </message>
-    <message>
-        <source>Enable zYEN Automint</source>
-        <translation>zYEN 자동생성 활성화</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming YEN which get automatically converted to zYEN via Zerocoin Protocol (min: 10%)</source>
-        <translation>YEN수신시 자동변환 zYEN 비율 (최소값:10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zYEN</source>
-        <translation>자동 변환되는 zYEN 비율</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough YEN for this denomination is available</source>
-        <translation>이 디노미네이션의 YEN가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zYEN Denomination</source>
-        <translation>선호하는 자동생성 zYEN 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2159,16 +2078,6 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>현재 YEN 잔액, 미확정, 생성중인 코인 포함</translation>
     </message>
     <message>
-        <source>zYEN Balance</source>
-        <translation>zYEN 잔액</translation>
-    </message>
-    <message>
-        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zYEN are spendable.</source>
-        <translation>성숙한 : 그것이 발행 된 후 같은 명칭의 20 개 이상의 확인 및 1 개 민트.
-이 zYEN는 쓸만합니다.</translation>
-    </message>
-    <message>
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
         <translation>미확인 : 20 회 미만 확인
@@ -2219,10 +2128,6 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Locked YEN or Masternode collaterals. These are excluded from zYEN minting.</source>
-        <translation>잠금 YEN 또는 Masternode collaterals. 이들은 zYEN minting에서 제외됩니다.</translation>
-    </message>
-    <message>
         <source>Locked:</source>
         <translation>잠김:</translation>
     </message>
@@ -2231,37 +2136,12 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>미승인:</translation>
     </message>
     <message>
-        <source>Your current zYEN balance, unconfirmed and immature zYEN included.</source>
-        <translation>zYEN 잔액, 미확정, 생성중인 zYEN 포함.</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>최근 트랜잭션</translation>
     </message>
     <message>
         <source>out of sync</source>
         <translation>동기화되지 않음</translation>
-    </message>
-    <message>
-        <source>Current percentage of zYEN.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
-</source>
-        <translation>현재 zYEN의 백분율 .
-자동 저장 기능이 활성화 된 경우이 비율은 구성된 자동 저장 비율 (기본값 = 10 %)을 기준으로 정해집니다.</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>자동 생성기능이 현재 작동중 그리고 </translation>
-    </message>
-    <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in cryptoyen.conf.</source>
-        <translation>자동생성 기능을 사용하지 않으시려면, cryptoyen.conf 화일에 enablezeromint=0 를 추가하세요.</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in cryptoyen.conf</source>
-        <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
-자동 변환을 사용하려면 pivotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
 </context>
 <context>
@@ -2485,18 +2365,6 @@ zYEN는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
         <translation>0 zYEN</translation>
     </message>
     <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>제로코인 전송 시큐리티 레벨.  높을수록 좋지만, 시간과 많은 자원이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>시큐리티 레벨:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>시큐리티 레벨 1 - 100 (기본값: 42)</translation>
-    </message>
-    <message>
         <source>Pay &amp;To:</source>
         <translation>지불 &amp;대상:</translation>
     </message>
@@ -2718,7 +2586,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -2726,11 +2594,11 @@ To change the percentage (no restart required):
     </message>
     <message>
         <source>Coins automatically selected</source>
-        <translation>코인 자동으로 선택됨</translation>
+        <translation>자동으로 선택됩니다.</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2773,14 +2641,6 @@ To change the percentage (no restart required):
 Please be patient...</source>
         <translation>제로코인 생성 초기화 진행중... : 전체 블록체인을 다시 검색합니다. 하드웨어에 따라 최대 30분이 걸릴수 있습니다.
 기다려주세요...</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>제로코인 전송중입니다.
-시큐리티 레벨과 여러분의 하드웨어에 따라 수 분이 걸립니다.
-조금만 기다려주세요...</translation>
     </message>
     <message>
         <source>) needed.
@@ -2953,20 +2813,8 @@ Maximum allowed: </source>
         <translation>새로 생성된 개인 지갑 주소(미사용된 익명의) &lt;br /&gt; 로</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>시큐리티 레벨</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>코인 전송 확인</translation>
-    </message>
-    <message>
-        <source>Version 1 zYEN require a security level of 100 to successfully spend.</source>
-        <translation>zYEN 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zYEN</source>
-        <translation>zYEN 전송 실패</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2984,11 +2832,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>제로코인 송금 실패 상태 =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of YEN to convert to zYEN</comment>
-        <translation><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3023,6 +2866,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>수수료:</translation>
     </message>
 </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -3073,7 +2919,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>YEN Core</source>
+        <translation>YEN Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3437,10 +3287,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록체인 동기화를 다시 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>위 아래 화살표를 사용하여 기록을 탐색하고 &lt;b&gt;Ctrl-L&lt;/b&gt; 화면을 지웁니다.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>사용가능한 명령을 보려면 &lt;b&gt;help&lt;/b&gt;를 입력하십시오.</translation>
     </message>
@@ -3512,6 +3358,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>새로운 수신 주소와 연결할 선택적 라벨.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>금&amp;액:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the YEN network.</source>
         <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다. 참고: YEN 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
     </message>
@@ -3534,10 +3384,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>요청할 선택적 금액. 이 금액을 비워두거나 특정 금액을 요청하지 않으려면 0으로 두세요.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;금액:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3583,6 +3429,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Copy amount</source>
         <translation>금액 복사</translation>
     </message>
+    <message>
+        <source>Copy address</source>
+        <translation>주소 복사</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -3616,7 +3466,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Address</source>
-        <translation>마스터노드 주소</translation>
+        <translation>주소</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3652,6 +3502,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Message</source>
         <translation>메세지</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3706,7 +3560,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -3935,10 +3789,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>KB당 %1보다 %2배 많은 수수료는 너무 높은 수수료입니다.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>%n 개의 블록 내에서 컨펌이 시작할 것으로 추정됨.</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -4245,12 +4095,4092 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core 개발자</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX Core 개발자</translation>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
     </message>
     <message>
-        <source>The HUZU Core developers</source>
-        <translation>HUZU Core 개발자</translation>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
+    </message>
+    <message>
+        <source>The ZIJA Core developers</source>
+        <translation>ZIJA Core 개발자</translation>
+    </message>
+    <message>
+        <source>The YEN Core developers</source>
+        <translation>YEN Core 개발자</translation>
     </message>
     <message>
         <source>The ZIJA Core developers</source>
@@ -4274,10 +8204,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n 블럭 더 열기</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -4339,10 +8265,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>, has not been successfully broadcast yet</source>
         <translation>, 아직 성공적으로 브로드캐스트되지 않았습니다</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, %n 노드를 통한 브로드캐스트</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>날짜</translation>
@@ -4382,10 +8304,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Credit</source>
         <translation>크레딧</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>%n 블록안에 생성됨</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4484,10 +8402,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Address</source>
         <translation>주소</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n 블럭 더 열기</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -4678,7 +8592,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Received with</source>
-        <translation>수신 됨</translation>
+        <translation>수신됨</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4758,7 +8672,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>확정</translation>
+        <translation>확정됨</translation>
     </message>
     <message>
         <source>Watch-only</source>
@@ -4891,11 +8805,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Select/Deselect All</source>
         <translation>전체 선택 / 해제</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>전송가능한 코인수</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>cryptoyen-core</name>
     <message>
@@ -5107,12 +9017,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 YEN.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 YEN과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 2500 YEN.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 2500 YEN과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 YEN.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 YEN와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 2500 YEN.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 2500 YEN와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5279,20 +9189,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core 개발자</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The HUZU Core Developers</source>
-        <translation>Copyright (C) 2015-%i The HUZU Core 개발자</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The ZIJA Core Developers</source>
-        <translation>Copyright (C) %i The ZIJA Core 개발자</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The YEN Core Developers</source>
-        <translation>Copyright (C) %i The YEN Core 개발자</translation>
+        <source>Copyright (C) 2015-%i The YEN Core Developers</source>
+        <translation>Copyright (C) 2015-%i The YEN Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5395,6 +9293,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>공개 키를 복구하는 중 오류가 발생했습니다.</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>디스크에 zerocoinDB 쓰기 오류</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>에러</translation>
     </message>
@@ -5429,6 +9331,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>어떠한 포트에서도 수신하는 것에 실패했습니다. 원하신다면 -listen=0 을 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Failed to parse host:port string</source>
+        <translation>호스트 : 포트 문자열을 구문 분석하지 못했습니다.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
@@ -5705,10 +9611,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Failed to create mint</source>
         <translation>생성 실패</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>디시리얼 실패</translation>
     </message>
     <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
@@ -6151,14 +10053,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>전송이 이미 되었습니다.</translation>
     </message>
     <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>신규로 전송된 거래가 확인되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>선택한 생성 코인은 유효하지 않은 동전입니다.</translation>
-    </message>
-    <message>
         <source>The transaction did not verify</source>
         <translation>거래가 확인되지 않았습니다.</translation>
     </message>
@@ -6305,10 +10199,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Verifying wallet...</source>
         <translation>지갑 인증 중...</translation>
-    </message>
-    <message>
-        <source>Version 1 zYEN require a security level of 100 to successfully spend.</source>
-        <translation>zYEN 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>

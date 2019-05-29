@@ -1,6 +1,4 @@
 // Copyright (c) 2014-2017 The Bitcoin developers
-// Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
 // Copyright (c) 2018-2019 The ZIJA developers
 // Copyright (c) 2019 The YEN developers
 // Distributed under the MIT software license, see the accompanying
@@ -44,8 +42,10 @@ static int64_t abs64(int64_t n)
     return (n >= 0 ? n : -n);
 }
 
-void AddTimeData(const CNetAddr& ip, int64_t nOffsetSample)
+void AddTimeData(const CNetAddr& ip, int64_t nTime)
 {
+    int64_t nOffsetSample = nTime - GetTime();
+
     LOCK(cs_nTimeOffset);
     // Ignore duplicates
     static set<CNetAddr> setKnown;

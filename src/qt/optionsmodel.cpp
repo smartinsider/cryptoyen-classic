@@ -1,9 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
-// Copyright (c) 2018-2019 The ZIJA developers
-// Copyright (c) 2019 The YEN developers
+// Copyright (c) 2015-2018 The YEN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -76,17 +73,25 @@ void OptionsModel::Init()
         settings.setValue("fHideZeroBalances", true);
     fHideZeroBalances = settings.value("fHideZeroBalances").toBool();
 
+    if (!settings.contains("fHideOrphans"))
+        settings.setValue("fHideOrphans", false);
+    fHideOrphans = settings.value("fHideOrphans").toBool();
+
     if (!settings.contains("fCoinControlFeatures"))
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures").toBool();
 
     if (!settings.contains("fZeromintEnable"))
-        settings.setValue("fZeromintEnable", false);
+        settings.setValue("fZeromintEnable", true);
     fEnableZeromint = settings.value("fZeromintEnable").toBool();
-    
-    if (!settings.contains("nZeromintPercentage"))
-        settings.setValue("nZeromintPercentage", 10);
-    nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
+
+    if (!settings.contains("fEnableObfuscation"))
+        settings.setValue("fEnableObfuscation", true);
+    fEnableObfuscation = settings.value("fEnableObfuscation").toBool();
+
+    if (!settings.contains("nObfuscationRounds"))
+        settings.setValue("nObfuscationRounds", 10);
+    nObfuscationRounds = settings.value("nObfuscationRounds").toLongLong();
 
     if (!settings.contains("nPreferredDenom"))
         settings.setValue("nPreferredDenom", 0);
@@ -165,8 +170,10 @@ void OptionsModel::Init()
 
     if (settings.contains("fZeromintEnable"))
         SoftSetBoolArg("-enablezeromint", settings.value("fZeromintEnable").toBool());
-    if (settings.contains("nZeromintPercentage"))
-        SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
+    if (settings.contains("fEnableObfuscation"))
+        SoftSetBoolArg("-enableautoconvertaddress", settings.value("fEnableObfuscation").toBool());
+    if (settings.contains("nObfuscationRounds"))
+        SoftSetArg("-zeromintpercentage", settings.value("nObfuscationRounds").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeCryptoYenAmount"))
@@ -255,10 +262,14 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case HideZeroBalances:
             return settings.value("fHideZeroBalances");
+        case HideOrphans:
+            return settings.value("fHideOrphans");
         case ZeromintEnable:
             return QVariant(fEnableZeromint);
+        case ZeromintAddresses:
+            return QVariant(fEnableObfuscation);
         case ZeromintPercentage:
-            return QVariant(nZeromintPercentage);
+            return QVariant(nObfuscationRounds);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
         case AnonymizeCryptoYenAmount:
@@ -375,10 +386,14 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("fZeromintEnable", fEnableZeromint);
             emit zeromintEnableChanged(fEnableZeromint);
             break;
+        case ZeromintAddresses:
+            fEnableObfuscation = value.toBool();
+            settings.setValue("fEnableObfuscation", fEnableObfuscation);
+            emit zeromintAddressesChanged(fEnableObfuscation);
         case ZeromintPercentage:
-            nZeromintPercentage = value.toInt();
-            settings.setValue("nZeromintPercentage", nZeromintPercentage);
-            emit zeromintPercentageChanged(nZeromintPercentage);
+            nObfuscationRounds = value.toInt();
+            settings.setValue("nObfuscationRounds", nObfuscationRounds);
+            emit zeromintPercentageChanged(nObfuscationRounds);
             break;
         case ZeromintPrefDenom:
             nPreferredDenom = value.toInt();
@@ -390,7 +405,11 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("fHideZeroBalances", fHideZeroBalances);
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
-
+        case HideOrphans:
+            fHideOrphans = value.toBool();
+            settings.setValue("fHideOrphans", fHideOrphans);
+            emit hideOrphansChanged(fHideOrphans);
+            break;
         case AnonymizeCryptoYenAmount:
             nAnonymizeCryptoYenAmount = value.toInt();
             settings.setValue("nAnonymizeCryptoYenAmount", nAnonymizeCryptoYenAmount);

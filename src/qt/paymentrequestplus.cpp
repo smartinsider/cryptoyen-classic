@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
-// Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The HUZU developers
+// Copyright (c) 2018-2019 The PIVX developers
+// Copyright (c) 2018-2019 The HUZU developers
 // Copyright (c) 2018-2019 The ZIJA developers
 // Copyright (c) 2019 The YEN developers
 // Distributed under the MIT software license, see the accompanying
@@ -15,7 +15,6 @@
 
 #include <stdexcept>
 
-#include <openssl/x509.h>
 #include <openssl/x509_vfy.h>
 
 #include <QDateTime>
@@ -104,14 +103,12 @@ bool PaymentRequestPlus::getMerchant(X509_STORE* certStore, QString& merchant) c
             qWarning() << "PaymentRequestPlus::getMerchant : Payment request: certificate expired or not yet active: " << qCert;
             return false;
         }
-#if QT_VERSION >= 0x050000
         if (qCert.isBlacklisted()) {
             qWarning() << "PaymentRequestPlus::getMerchant : Payment request: certificate blacklisted: " << qCert;
             return false;
         }
-#endif
-        const unsigned char* data = (const unsigned char*)certChain.certificate(i).data();
-        X509* cert = d2i_X509(NULL, &data, certChain.certificate(i).size());
+        const unsigned char *data = (const unsigned char *)certChain.certificate(i).data();
+        X509 *cert = d2i_X509(nullptr, &data, certChain.certificate(i).size());
         if (cert)
             certs.push_back(cert);
     }

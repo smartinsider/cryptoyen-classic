@@ -1,0 +1,8 @@
+/usr/bin/cryptoyen-cli		--	gen_context(system_u:object_r:cryptoyen_exec_t,s0)
+/usr/sbin/cryptoyend		--	gen_context(system_u:object_r:cryptoyen_exec_t,s0)
+/usr/lib(64)?/cryptoyen/cryptoyend		--	gen_context(system_u:object_r:cryptoyen_exec_t,s0)
+
+/etc/cryptoyen(/.*)?		gen_context(system_u:object_r:cryptoyen_conf_t,s0)
+/var/lib/cryptoyen(/.*)?		gen_context(system_u:object_r:cryptoyen_var_lib_t,s0)
+
+(/var)?/run/cryptoyend(/.*)?   gen_context(system_u:object_r:cryptoyen_var_run_t,s0)

@@ -3,7 +3,7 @@ YEN Core
 
 Setup
 ---------------------
-[YEN Core](http://cryptoyen.icu/wallet) is the original YEN client and it builds the backbone of the network. However, it downloads and stores the entire history of YEN transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[YEN Core](https://cryptoyen.icu/wallet) is the original YEN client and it builds the backbone of the network. However, it downloads and stores the entire history of YEN transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -42,7 +42,7 @@ The following are developer notes on how to build YEN on your native platform. T
 
 Development
 ---------------------
-The CryptoYen repo's [root README](https://github.com/smartinsider/cryptoyen/blob/master/README.md) contains relevant information on the development process and automated testing.
+The CryptoYen repo's [root README](https://github.com/YEN-Project/YEN/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
