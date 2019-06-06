@@ -220,7 +220,7 @@ void CMasternodeSync::Process()
     BOOST_FOREACH (CNode* pnode, vNodes) {
         if (Params().NetworkID() == CBaseChainParams::REGTEST) {
 
-	    if (RequestedMasternodeAttempt == 1) {
+	    if (RequestedMasternodeAttempt <= 2) {
             	mnodeman.DsegUpdate(pnode);
             	int nMnCount = mnodeman.CountEnabled();
             	pnode->PushMessage("mnget", nMnCount); //sync payees
@@ -247,12 +247,8 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeList == 0 && (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
  
-		    //SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT iS ACTIVE FOREVER
-                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
-                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
-                    RequestedMasternodeAttempt = 0;
-                    lastFailure = GetTime();
-                    nCountFailures++;
+		             
+                    GetNextAsset();
                     return;
                 }
 
@@ -277,12 +273,15 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeWinner == 0 &&
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
-                    //SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT IS ACTIVE FOREVER
-                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
-                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
-                    RequestedMasternodeAttempt = 0;
-                    lastFailure = GetTime();
-                    nCountFailures++;
+              
+                    GetNextAsset();
+                    return;
+                }
+
+                if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3) return;
+
+                CBlockIndex* pindexPrev = chainActive.Tip();
+                if (pindexPrev == NULL) return;
                 int nMnCount = mnodeman.CountEnabled();
                 pnode->PushMessage("mnget", nMnCount); //sync payees
                 RequestedMasternodeAttempt++;
@@ -296,8 +295,7 @@ void CMasternodeSync::Process()
 				}
 
                 //UPDATE SMART :: 75 + // DELETE 2 LINES
-                //activeMasternode.ManageStatus();
-				//RequestedMasternodeAssets = MASTERNODE_SYNC_FINISHED;
+
 				
                 
                 if (pnode->HasFulfilledRequest("busync")) continue;
