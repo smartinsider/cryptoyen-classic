@@ -220,7 +220,7 @@ void CMasternodeSync::Process()
     BOOST_FOREACH (CNode* pnode, vNodes) {
         if (Params().NetworkID() == CBaseChainParams::REGTEST) {
 
-		    if (RequestedMasternodeAttempt > 0) {
+		    if (RequestedMasternodeAttempt <= 2) {
             	mnodeman.DsegUpdate(pnode);
             	int nMnCount = mnodeman.CountEnabled();
             	pnode->PushMessage("mnget", nMnCount); //sync payees
@@ -267,7 +267,7 @@ void CMasternodeSync::Process()
                 if (lastMasternodeWinner > 0 && lastMasternodeWinner < GetTime() - MASTERNODE_SYNC_TIMEOUT * 2 && RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD) { //hasn't received a new item in the last five seconds, so we'll move to the
                     GetNextAsset();
                     // Try to activate our masternode if possible
-                    activeMasternode.ManageStatus();
+                    //activeMasternode.ManageStatus();
                     return;
                 }
 
