@@ -220,7 +220,7 @@ void CMasternodeSync::Process()
     BOOST_FOREACH (CNode* pnode, vNodes) {
         if (Params().NetworkID() == CBaseChainParams::REGTEST) {
 
-		    if (RequestedMasternodeAttempt <= 1) {
+	    if (RequestedMasternodeAttempt == 1) {
             	mnodeman.DsegUpdate(pnode);
             	int nMnCount = mnodeman.CountEnabled();
             	pnode->PushMessage("mnget", nMnCount); //sync payees
