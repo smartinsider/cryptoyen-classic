@@ -247,7 +247,7 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeList == 0 && (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
  
-					//SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT iS ACTIVE FOREVER
+		    //SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT iS ACTIVE FOREVER
                     LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
                     RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
                     RequestedMasternodeAttempt = 0;
@@ -277,12 +277,15 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeWinner == 0 &&
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
-                    //SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT IS ACTIVE FOREVER
+                    SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT IS ACTIVE FOREVER
                     LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
                     RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
                     RequestedMasternodeAttempt = 0;
                     lastFailure = GetTime();
                     nCountFailures++;
+                int nMnCount = mnodeman.CountEnabled();
+                pnode->PushMessage("mnget", nMnCount); //sync payees
+                RequestedMasternodeAttempt++;
 				    return;
 				}
 				
@@ -301,6 +304,7 @@ void CMasternodeSync::Process()
                 pnode->FulfilledRequest("busync");
 
                 if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3) return;
+
 
                 return;
             }
