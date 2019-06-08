@@ -542,9 +542,9 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             }
              
 			LogPrintf("Errorscan(): 4  \n");
-            if (mapHashedBlocks.count(chainActive.Tip()->nHeight) && !fLastLoopOrphan) //search our map of hashed blocks, see if bestblock has been hashed yet
+            if (mapHashedBlocks.count(chainActive.Tip()->nHeight)) //search our map of hashed blocks, see if bestblock has been hashed yet
             {
-			    LogPrintf("Errorscan(): 5  \n");
+			    LogPrintf("Errorscan(): 4-1  \n");
                 if (GetTime() - mapHashedBlocks[chainActive.Tip()->nHeight] < max(pwallet->nHashInterval, (unsigned int)1)) // wait half of the nHashDrift with max wait of 3 minutes
                 {
                     MilliSleep(5000);
@@ -552,6 +552,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 }
             }
         }
+        
+		LogPrintf("Errorscan(): 4-2  \n");
 
         //
         // Create new block
