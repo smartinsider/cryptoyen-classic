@@ -403,20 +403,21 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
         pblock->nNonce = 0;
 
-
+        LogPrintf("Errorscan(): 1  \n");
         pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
         if (fProofOfStake) {
             unsigned int nExtraNonce = 0;
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
             LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
         
-        
+            LogPrintf("Errorscan(): 2  \n");
             if (!SignBlock(*pblock, *pwallet)) {
                 LogPrintf("BitcoinMiner(): Signing new block with UTXO key failed \n");
                 return NULL;
             }
 			
         }
+        LogPrintf("Errorscan(): 3  \n");
 
         CValidationState state;
         if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
@@ -539,9 +540,11 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 if (!fGenerateBitcoins && !fProofOfStake)
                     continue;
             }
-
+             
+			LogPrintf("Errorscan(): 4  \n");
             if (mapHashedBlocks.count(chainActive.Tip()->nHeight) && !fLastLoopOrphan) //search our map of hashed blocks, see if bestblock has been hashed yet
             {
+			    LogPrintf("Errorscan(): 5  \n");
                 if (GetTime() - mapHashedBlocks[chainActive.Tip()->nHeight] < max(pwallet->nHashInterval, (unsigned int)1)) // wait half of the nHashDrift with max wait of 3 minutes
                 {
                     MilliSleep(5000);
@@ -575,8 +578,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
             SetThreadPriority(THREAD_PRIORITY_NORMAL);
+			LogPrintf("Errorscan(): 6  \n");
             if (!ProcessBlockFound(pblock, *pwallet, reservekey)) {
                 fLastLoopOrphan = true;
+				LogPrintf("Errorscan(): 7  \n");
                 continue;
             }
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
