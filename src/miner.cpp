@@ -135,7 +135,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     pblocktemplate->vTxSigOps.push_back(-1); // updated at end
 
     // ppcoin: if coinstake available add coinstake tx
-    static inpindexPrevt64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
+    static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
 
     if (fProofOfStake) {
         boost::this_thread::interruption_point();
