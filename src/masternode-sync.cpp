@@ -317,7 +317,7 @@ void CMasternodeSync::Process()
                 if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3) return;
 
                 return;
-            
+            }
         }
     }
 }
