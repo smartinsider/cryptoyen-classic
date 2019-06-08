@@ -254,13 +254,13 @@ void CMasternodeSync::Process()
                 if (lastMasternodeList == 0 && (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
 					//TO FIX @SMARTINSIDER 
 					//NEED TO UNCOMMENT
-                    LogPrintf("CMasternodeSync::Process -1- ERROR - Sync has failed, will retry later\n");
-                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
-                    RequestedMasternodeAttempt = 0;
-                    lastFailure = GetTime();
-                    nCountFailures++;
+                    //LogPrintf("CMasternodeSync::Process -1- ERROR - Sync has failed, will retry later\n");
+                    //RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
+                    //RequestedMasternodeAttempt = 0;
+                    //lastFailure = GetTime();
+                    //nCountFailures++;
 					//DELETE 1 line
-					//GetNextAsset();
+					GetNextAsset();
                     return;
                 }
 
@@ -287,12 +287,13 @@ void CMasternodeSync::Process()
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
                     //TO FIX @SMARTINSIDER 
 		     		//NEED TO UNCOMMENT
-                    LogPrintf("CMasternodeSync::Process -2- ERROR - Sync has failed, will retry later\n");
-                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
-                    RequestedMasternodeAttempt = 0;
-                    lastFailure = GetTime();
-                    nCountFailures++;
-				    return;
+                    //LogPrintf("CMasternodeSync::Process -2- ERROR - Sync has failed, will retry later\n");
+                    //RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
+                    //RequestedMasternodeAttempt = 0;
+                    //lastFailure = GetTime();
+                    //nCountFailures++;
+				    GetNextAsset();
+					return;
 				}
 				
                 if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD) { 
@@ -308,9 +309,7 @@ void CMasternodeSync::Process()
                     return;
 				}
 
-                //UPDATE SMART :: 75 + // DELETE 2 LINES
-				
-                
+                //UPDATE SMART :: 75 + // DELETE 2 LINES			
                 if (pnode->HasFulfilledRequest("busync")) continue;
                 pnode->FulfilledRequest("busync");
 
