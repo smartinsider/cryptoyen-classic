@@ -254,7 +254,7 @@ void CMasternodeSync::Process()
                 if (lastMasternodeList == 0 && (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
 					//TO FIX @SMARTINSIDER 
 					//NEED TO UNCOMMENT
-                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
+                    LogPrintf("CMasternodeSync::Process -1- ERROR - Sync has failed, will retry later\n");
                     RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
                     RequestedMasternodeAttempt = 0;
                     lastFailure = GetTime();
@@ -287,7 +287,7 @@ void CMasternodeSync::Process()
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
                     //TO FIX @SMARTINSIDER 
 		     		//NEED TO UNCOMMENT
-                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
+                    LogPrintf("CMasternodeSync::Process -2- ERROR - Sync has failed, will retry later\n");
                     RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
                     RequestedMasternodeAttempt = 0;
                     lastFailure = GetTime();
@@ -317,7 +317,7 @@ void CMasternodeSync::Process()
                 if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3) return;
 
                 return;
-            }
+            
         }
     }
 }
