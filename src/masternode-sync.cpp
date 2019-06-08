@@ -219,14 +219,20 @@ void CMasternodeSync::Process()
 
     BOOST_FOREACH (CNode* pnode, vNodes) {
         if (Params().NetworkID() == CBaseChainParams::REGTEST) {
+            
+            //#WARNING
+            //TO FIX @SMARTINSIDER
+            //709POW = 2 lines
+            //if (RequestedMasternodeAttempt <= 2) {
+            //    pnode->PushMessage("getsporks"); //get current network sporks
+            //} else 
 
-	    //if (RequestedMasternodeAttempt <= 2) {
-            	mnodeman.DsegUpdate(pnode);
-            	int nMnCount = mnodeman.CountEnabled();
-            	pnode->PushMessage("mnget", nMnCount); //sync payees
-            //} else {
-                RequestedMasternodeAssets = MASTERNODE_SYNC_FINISHED;
-            //}
+            mnodeman.DsegUpdate(pnode);
+            int nMnCount = mnodeman.CountEnabled();
+            pnode->PushMessage("mnget", nMnCount); //sync payees
+            
+            RequestedMasternodeAssets = MASTERNODE_SYNC_FINISHED;
+
             RequestedMasternodeAttempt++;
             return;
         }
@@ -246,9 +252,15 @@ void CMasternodeSync::Process()
 
                 // timeout
                 if (lastMasternodeList == 0 && (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
- 
-		             
-                    GetNextAsset();
+					//TO FIX @SMARTINSIDER 
+					//NEED TO UNCOMMENT
+                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
+                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
+                    RequestedMasternodeAttempt = 0;
+                    lastFailure = GetTime();
+                    nCountFailures++;
+					//DELETE 1 line
+					//GetNextAsset();
                     return;
                 }
 
@@ -273,21 +285,23 @@ void CMasternodeSync::Process()
                 // timeout
                 if (lastMasternodeWinner == 0 &&
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
-              
-                    GetNextAsset();
-                    return;
-                }
-
-                if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3) return;
-
-                CBlockIndex* pindexPrev = chainActive.Tip();
-                if (pindexPrev == NULL) return;
-                int nMnCount = mnodeman.CountEnabled();
-                pnode->PushMessage("mnget", nMnCount); //sync payees
-                RequestedMasternodeAttempt++;
+                    //TO FIX @SMARTINSIDER 
+		     		//NEED TO UNCOMMENT
+                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
+                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
+                    RequestedMasternodeAttempt = 0;
+                    lastFailure = GetTime();
+                    nCountFailures++;
 				    return;
 				}
 				
+                if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD) { 
+                     GetNextAsset();
+                     // Try to activate our masternode if possible
+                     activeMasternode.ManageStatus();
+                    return;
+                }
+
                 if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3){
 					GetNextAsset();
                  	activeMasternode.ManageStatus();
