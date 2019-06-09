@@ -32,5 +32,5 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake);
 
 extern double dHashesPerSec;
 extern int64_t nHPSTimerStart;
-
+extern int64_t nLastPosTime;
 #endif // BITCOIN_MINER_H
