@@ -137,7 +137,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // ppcoin: if coinstake available add coinstake tx
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
-    static int64_t nLastPosTime = nLastCoinStakeSearchTime; // only initialized at startup
+    int nLastPosTime = nLastCoinStakeSearchTime; // only initialized at startup
 
 	
     if (fProofOfStake) {
