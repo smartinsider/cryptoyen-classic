@@ -565,7 +565,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 					minPosTime = 60 - (GetTime() - nMintableLastCheck);
 					nLastPosTime = minPosTime;
 					//LogPrintf("Scaning PoS Block ...\n");
-					MilliSleep((minPosTime * 1000));
+					//MilliSleep((minPosTime * 1000));
+					MilliSleep((5000));
 					//LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
 					
                 }
@@ -617,15 +618,15 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
 			
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
-			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
-                {
-				    LogPrintf("Stake Block was created too soon...\n");
-					MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
+			//if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
+            //    {
+			//	    LogPrintf("Stake Block was created too soon...\n");
+			//		MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
 				    
 				    //Timing of new block
-			        nLastPosTime = GetTime();
-				    continue;
-                }
+			//        nLastPosTime = GetTime();
+			//	    continue;
+            //    }
             
 			SetThreadPriority(THREAD_PRIORITY_NORMAL);
 			//LogPrintf("Errorscan(): 6  \n");
