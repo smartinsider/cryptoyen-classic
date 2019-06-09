@@ -150,6 +150,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         bool fStakeFound = false;
         if (nSearchTime >= nLastCoinStakeSearchTime) {
             unsigned int nTxNewTime = 0;
+			if nLastCoinStakeSearchInterval
+			
             if (pwallet->CreateCoinStake(*pwallet, pblock->nBits, nSearchTime - nLastCoinStakeSearchTime, txCoinStake, nTxNewTime)) {
                 pblock->nTime = nTxNewTime;
                 pblock->vtx[0].vout[0].SetEmpty();
@@ -158,7 +160,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             }
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
-			nLastPosTime = nSearchTime;
         }
         
 		
@@ -536,7 +537,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     LogPrintf("YENMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("cryptoyen-miner");
-
+	
+	//POS time
+	unsigned int nLastPosTime = 0;
+	
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
     unsigned int nExtraNonce = 0;
@@ -561,9 +565,11 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
                 {
 					minPosTime = 60 - (GetTime() - nMintableLastCheck);
+					nLastPosTime = minPosTime;
 					//LogPrintf("Scaning PoS Block ...\n");
 					MilliSleep((minPosTime * 1000));
 					//LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
+					
                 }
 				nMintableLastCheck = GetTime();
                 
