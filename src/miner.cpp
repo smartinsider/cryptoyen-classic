@@ -100,6 +100,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 {
     CReserveKey reservekey(pwallet);
 
+	
+	
     // Create new block
     unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
     if (!pblocktemplate.get())
@@ -115,7 +117,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     const int nHeight = pindexPrev->nHeight + 1;
 
-    // Make sure to create the correct block version after zerocoin is enabled
     pblock->nVersion = 5;   // Supports CLTV activation
 
     // -regtest only: allow overriding block.nVersion with
@@ -136,9 +137,12 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // ppcoin: if coinstake available add coinstake tx
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
+    static int64_t nLastPosTime = nLastCoinStakeSearchTime; // only initialized at startup
 
+	
     if (fProofOfStake) {
-	    LogPrintf("Errorscan(CHANGING_002) \n");
+	    //LogPrintf("Errorscan(CHANGING_002) \n");
+		//ONLY IN STARTUP
         boost::this_thread::interruption_point();
         pblock->nTime = GetAdjustedTime();
         CBlockIndex* pindexPrev = chainActive.Tip();
@@ -237,7 +241,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                     continue;
                 }
 
-				LogPrintf("Errorscan(CHANGING_001) \n");
+				//LogPrintf("Errorscan(CHANGING_001) \n");
                 //Check for invalid/fraudulent inputs. They shouldn't make it through mempool, but check anyways.
                 if (invalid_out::ContainsOutPoint(txin.prevout)) {
                     LogPrintf("%s : found invalid input %s in tx %s", __func__, txin.prevout.ToString(), tx.GetHash().ToString());
@@ -413,21 +417,22 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
         pblock->nNonce = 0;
 
-        LogPrintf("Errorscan(): 1  \n");
+        //LogPrintf("Errorscan(): 1  \n");
         pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
         if (fProofOfStake) {
             unsigned int nExtraNonce = 0;
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
-            LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
+            //Do not need this line :
+			//LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
         
-            LogPrintf("Errorscan(): 2  \n");
+            //LogPrintf("Errorscan(): 2  \n");
             if (!SignBlock(*pblock, *pwallet)) {
                 LogPrintf("BitcoinMiner(): Signing new block with UTXO key failed \n");
                 return NULL;
             }
 			
         }
-        LogPrintf("Errorscan(): 3  \n");
+        //LogPrintf("Errorscan(): 3  \n");
 
         CValidationState state;
         if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
@@ -521,6 +526,9 @@ int minPosTime = 0;
 
 // ***TODO*** that part changed in bitcoin, we are using a mix with old one here for now
 
+
+
+
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
     LogPrintf("YENMiner started\n");
@@ -547,13 +555,13 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
             while (vNodes.empty() || pwallet->IsLocked() || (pwallet->GetBalance() > 0 && nReserveBalance >= pwallet->GetBalance()) || !masternodeSync.IsSynced()) {
                 nLastCoinStakeSearchInterval = 0;               
-                LogPrintf("Errorscan(NEW TIME): scaning 01 ... \n");
+                //LogPrintf("Errorscan(NEW TIME): scaning 01 ... \n");
                 if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
                 {
 					minPosTime = 60 - (GetTime() - nMintableLastCheck);
-					LogPrintf("Scaning PoS Block ...\n");
+					//LogPrintf("Scaning PoS Block ...\n");
 					MilliSleep((minPosTime * 1000));
-					LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
+					//LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
                 }
 				nMintableLastCheck = GetTime();
                 
@@ -562,10 +570,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                     continue;
             }
              
-			LogPrintf("Errorscan(): 4  \n");
+			//LogPrintf("Errorscan(): 4  \n");
             if (mapHashedBlocks.count(chainActive.Tip()->nHeight) && !fLastLoopOrphan) //search our map of hashed blocks, see if bestblock has been hashed yet
             {
-			    LogPrintf("Errorscan(): 4-1  \n");
+			    //LogPrintf("Errorscan(): 4-1  \n");
                 if (GetTime() - mapHashedBlocks[chainActive.Tip()->nHeight] < max(pwallet->nHashInterval, (unsigned int)1)) // wait half of the nHashDrift with max wait of 3 minutes
                 {
                     MilliSleep(5000);
@@ -574,7 +582,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             }
         }
         
-		LogPrintf("Errorscan(): 4-2  \n");
+		//LogPrintf("Errorscan(): 4-2  \n");
 
         //
         // Create new block
@@ -593,18 +601,23 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
         //Stake miner main
         if (fProofOfStake) {
+			
+			//THIS LINE ALREDY EXISTS
             LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
             if (!SignBlock(*pblock, *pwallet)) {
                 LogPrintf("BitcoinMiner(): Signing new block with UTXO key failed \n");
                 continue;
-            }
-
+            }		
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
-            SetThreadPriority(THREAD_PRIORITY_NORMAL);
-			LogPrintf("Errorscan(): 6  \n");
+			
+			//Timing of new block
+			nLastPosTime = GetTime();	
+            
+			SetThreadPriority(THREAD_PRIORITY_NORMAL);
+			//LogPrintf("Errorscan(): 6  \n");
             if (!ProcessBlockFound(pblock, *pwallet, reservekey)) {
                 fLastLoopOrphan = true;
-				LogPrintf("Errorscan(): 7  \n");
+				//LogPrintf("Errorscan(): 7  \n");
                 continue;
             }
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -682,7 +695,15 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 break;
             if (pindexPrev != chainActive.Tip())
                 break;
-
+			
+			//FIXING_FREQUNCY_POS_MINING_SPORK_21
+			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
+                {
+				    LogPrintf("Stake Block was created too soon...\n");
+					MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
+				    break;
+                }	
+			
             // Update nTime every few seconds
             UpdateTime(pblock, pindexPrev);
         }
