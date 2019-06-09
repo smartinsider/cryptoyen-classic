@@ -608,16 +608,6 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //Stake miner main
         if (fProofOfStake) {
 			
-			//THIS LINE ALREDY EXISTS
-            LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
-            if (!SignBlock(*pblock, *pwallet)) {
-                LogPrintf("BitcoinMiner(): Signing new block with UTXO key failed \n");
-                continue;
-            }		
-            LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
-			
-			
-			
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
 			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
                 {
@@ -627,10 +617,15 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 				    //Timing of new block
 				    continue;
                 }
-                nLastPosTime = GetTime();			
-			LogPrintf("FIXING_FREQUNCY_POS_MINING_SPORK_21\n");
+                nLastPosTime = GetTime();
 			
-			
+			//THIS LINE ALREDY EXISTS
+            LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
+            if (!SignBlock(*pblock, *pwallet)) {
+                LogPrintf("BitcoinMiner(): Signing new block with UTXO key failed \n");
+                continue;
+            }		
+            LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
 			
 			SetThreadPriority(THREAD_PRIORITY_NORMAL);
 			//LogPrintf("Errorscan(): 6  \n");
