@@ -158,9 +158,12 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             }
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
+			nLastPosTime = nSearchTime;
         }
-        nLastPosTime = GetAdjustedTime(); // only initialized at startup
-	
+        
+		
+
+		
         if (!fStakeFound) {
             //LogPrint("staking", "CreateNewBlock(): stake not found\n");
             return NULL;
@@ -692,6 +695,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 break;
             if (pindexPrev != chainActive.Tip())
                 break;
+			
 			
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
 			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
