@@ -137,9 +137,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // ppcoin: if coinstake available add coinstake tx
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
-    int nLastPosTime = nLastCoinStakeSearchTime; // only initialized at startup
-
-	
+   
     if (fProofOfStake) {
 	    //LogPrintf("Errorscan(CHANGING_002) \n");
 		//ONLY IN STARTUP
@@ -161,7 +159,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
         }
-
+        nLastPosTime = GetAdjustedTime(); // only initialized at startup
+	
         if (!fStakeFound) {
             //LogPrint("staking", "CreateNewBlock(): stake not found\n");
             return NULL;
@@ -610,8 +609,6 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             }		
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
 			
-			//Timing of new block
-			nLastPosTime = GetTime();	
             
 			SetThreadPriority(THREAD_PRIORITY_NORMAL);
 			//LogPrintf("Errorscan(): 6  \n");
@@ -701,9 +698,12 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 {
 				    LogPrintf("Stake Block was created too soon...\n");
 					MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
+				    
+				    //Timing of new block
+			        nLastPosTime = GetTime();
 				    break;
-                }	
-			
+                }
+						
             // Update nTime every few seconds
             UpdateTime(pblock, pindexPrev);
         }
