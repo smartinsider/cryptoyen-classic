@@ -541,7 +541,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
                 {
 					minPosTime = 60 - (GetTime() - nMintableLastCheck);
-					MilliSleep(minPosTime);
+					LogPrintf("Scaning PoS Block ...\n");
+					MilliSleep((minPosTime * 1000));
 					LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
                 }
 				nMintableLastCheck = GetTime();
