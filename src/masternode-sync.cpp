@@ -178,7 +178,6 @@ void CMasternodeSync::ClearFulfilledRequest()
     BOOST_FOREACH (CNode* pnode, vNodes) {
         pnode->ClearFulfilledRequest("mnsync");
         pnode->ClearFulfilledRequest("mnwsync");
-        pnode->ClearFulfilledRequest("busync");
     }
 }
 
@@ -214,6 +213,11 @@ void CMasternodeSync::Process()
     //if (Params().NetworkID() != CBaseChainParams::REGTEST &&
     //    !IsBlockchainSynced() && RequestedMasternodeAssets > MASTERNODE_SYNC_SPORKS) return;
 
+    if(wait_blockchain_sync)
+    {
+        nAssetSyncStarted = GetTime();
+        return;
+    }
     TRY_LOCK(cs_vNodes, lockRecv);
     if (!lockRecv) return;
 
@@ -309,11 +313,10 @@ void CMasternodeSync::Process()
                     return;
 				}
 
-                //UPDATE SMART :: 75 + // DELETE 2 LINES			
-                if (pnode->HasFulfilledRequest("busync")) continue;
-                pnode->FulfilledRequest("busync");
+                if(!mnodeman.WinnersUpdate(pnode))
+                    continue;
 
-                if (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3) return;
+                ++RequestedMasternodeAttempt;
 
                 return;
             }
