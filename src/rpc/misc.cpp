@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The YEN developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The YEN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -128,6 +129,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
         obj.push_back(Pair("status", "Blockchain information not yet available"));
         return obj;
     }
+    obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
 
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
