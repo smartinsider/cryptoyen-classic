@@ -178,6 +178,7 @@ void CMasternodeSync::ClearFulfilledRequest()
     BOOST_FOREACH (CNode* pnode, vNodes) {
         pnode->ClearFulfilledRequest("mnsync");
         pnode->ClearFulfilledRequest("mnwsync");
+        pnode->ClearFulfilledRequest("busync");
     }
 }
 
@@ -304,7 +305,7 @@ void CMasternodeSync::Process()
                 ++RequestedMasternodeAttempt;
 
                 return;
-					}
+				
             }
         }
     }
