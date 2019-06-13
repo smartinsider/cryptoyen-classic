@@ -304,7 +304,8 @@ void CMasternodeSync::Process()
                 ++RequestedMasternodeAttempt;
 
                 return;
-            
+					}
+            }
         }
     }
 }
