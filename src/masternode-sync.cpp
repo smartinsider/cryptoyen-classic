@@ -299,8 +299,8 @@ void CMasternodeSync::Process()
                     return;
 				}
 
-                if(!mnodeman.WinnersUpdate(pnode))
-                    continue;
+                //if(!mnodeman.WinnersUpdate(pnode))
+                //    continue;
 
                 ++RequestedMasternodeAttempt;
 
