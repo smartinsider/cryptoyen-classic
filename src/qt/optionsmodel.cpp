@@ -81,10 +81,6 @@ void OptionsModel::Init()
         settings.setValue("fCoinControlFeatures", false);
     fCoinControlFeatures = settings.value("fCoinControlFeatures").toBool();
 
-    if (!settings.contains("fZeromintEnable"))
-        settings.setValue("fZeromintEnable", true);
-    fEnableZeromint = settings.value("fZeromintEnable").toBool();
-
     if (!settings.contains("fEnableObfuscation"))
         settings.setValue("fEnableObfuscation", true);
     fEnableObfuscation = settings.value("fEnableObfuscation").toBool();
@@ -264,8 +260,6 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("fHideZeroBalances");
         case HideOrphans:
             return settings.value("fHideOrphans");
-        case ZeromintEnable:
-            return QVariant(fEnableZeromint);
         case ZeromintAddresses:
             return QVariant(fEnableObfuscation);
         case ZeromintPercentage:
@@ -381,10 +375,6 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
                 setRestartRequired(true);
             }
             break;
-        case ZeromintEnable:
-            fEnableZeromint = value.toBool();
-            settings.setValue("fZeromintEnable", fEnableZeromint);
-            emit zeromintEnableChanged(fEnableZeromint);
             break;
         case ZeromintAddresses:
             fEnableObfuscation = value.toBool();
