@@ -445,8 +445,7 @@ public:
 
     /// Passively run Obfuscation in the background according to the configuration in settings (only for QT)
     bool DoAutomaticDenominating(bool fDryRun = false);
-    bool PrepareObfuscationDenominate();
-
+    
     /// Check for process in Obfuscation
     void Check();
     void CheckFinalTransaction();

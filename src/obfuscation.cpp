@@ -126,10 +126,7 @@ void CObfuscationPool::ProcessMessageObfuscation(CNode* pfrom, std::string& strC
                 return;
             }
 
-            if (state == POOL_STATUS_QUEUE) {
-                LogPrint("obfuscation", "Obfuscation queue is ready - %s\n", addr.ToString());
-                PrepareObfuscationDenominate();
-            }
+            
         } else {
             BOOST_FOREACH (CObfuscationQueue q, vecObfuscationQueue) {
                 if (q.vin == dsq.vin) return;
@@ -1381,27 +1378,6 @@ void CObfuscationPool::ClearLastMessage()
 //
 
 
-bool CObfuscationPool::PrepareObfuscationDenominate()
-{
-    std::string strError = "";
-    // Submit transaction to the pool if we get here
-    // Try to use only inputs with the same number of rounds starting from lowest number of rounds possible
-    for (int i = 0; i < nObfuscationRounds; i++) {
-        strError = pwalletMain->PrepareObfuscationDenominate(i, i + 1);
-        LogPrintf("DoAutomaticDenominating : Running Obfuscation denominate for %d rounds. Return '%s'\n", i, strError);
-        if (strError == "") return true;
-    }
-
-    // We failed? That's strange but let's just make final attempt and try to mix everything
-    strError = pwalletMain->PrepareObfuscationDenominate(0, nObfuscationRounds);
-    LogPrintf("DoAutomaticDenominating : Running Obfuscation denominate for all rounds. Return '%s'\n", strError);
-    if (strError == "") return true;
-
-    // Should never actually get here but just in case
-    strAutoDenomResult = strError;
-    LogPrintf("DoAutomaticDenominating : Error running denominate, %s\n", strError);
-    return false;
-}
 
 bool CObfuscationPool::SendRandomPaymentToSelf()
 {

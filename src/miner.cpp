@@ -522,6 +522,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 bool fGenerateBitcoins = false;
 bool fMintableCoins = false;
+int nMintableLastCheck = 0;
 int minPosTime = 0;
 
 // ***TODO*** that part changed in bitcoin, we are using a mix with old one here for now
@@ -545,6 +546,12 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     bool fLastLoopOrphan = false;
     while (fGenerateBitcoins || fProofOfStake) {
         if (fProofOfStake) {
+            //control the amount of times the client will check for mintable coins
+            if ((GetTime() - nMintableLastCheck > 5 * 60)) // 5 minute check time
+            {
+                nMintableLastCheck = GetTime();
+                fMintableCoins = pwallet->MintableCoins();
+            }
 
             if (chainActive.Tip()->nHeight < Params().LAST_POW_BLOCK()) {
                 MilliSleep(5000);
@@ -553,6 +560,19 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
             while (vNodes.empty() || pwallet->IsLocked() || (pwallet->GetBalance() > 0 && nReserveBalance >= pwallet->GetBalance()) || !masternodeSync.IsSynced()) {
                 nLastCoinStakeSearchInterval = 0;               
+                //LogPrintf("Errorscan(NEW TIME): scaning 01 ... \n");
+                if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
+                {
+					minPosTime = 60 - (GetTime() - nMintableLastCheck);
+					nLastPosTime = minPosTime;
+					//LogPrintf("Scaning PoS Block ...\n");
+					//MilliSleep((minPosTime * 1000));
+					MilliSleep((5000));
+					//LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
+					
+                }
+				nMintableLastCheck = GetTime();
+                
                 MilliSleep(5000);
                 if (!fGenerateBitcoins && !fProofOfStake)
                     continue;

@@ -19,12 +19,7 @@
 using namespace std;
 using namespace boost;
 
-/*
-    Don't ever reuse these IDs for other sporks
-    - This would result in old clients getting confused about which spork is for what
 
-    Sporks 11,12, and 16 to be removed with 1st zerocoin release
-*/
 #define SPORK_START 10001
 #define SPORK_END 10015
 

@@ -398,7 +398,6 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-onlynet=<net>", _("Only connect to nodes in network <net> (ipv4, ipv6 or onion)"));
     strUsage += HelpMessageOpt("-permitbaremultisig", strprintf(_("Relay non-P2SH multisig (default: %u)"), 1));
     strUsage += HelpMessageOpt("-peerbloomfilters", strprintf(_("Support filtering of blocks and transaction with bloom filters (default: %u)"), DEFAULT_PEERBLOOMFILTERS));
-    strUsage += HelpMessageOpt("-peerbloomfilterszc", strprintf(_("Support the zerocoin light node protocol (default: %u)"), DEFAULT_PEERBLOOMFILTERS_ZC));
     strUsage += HelpMessageOpt("-port=<port>", strprintf(_("Listen for connections on <port> (default: %u or testnet: %u)"), 37701, 51474));
     strUsage += HelpMessageOpt("-proxy=<ip:port>", _("Connect through SOCKS5 proxy"));
     strUsage += HelpMessageOpt("-proxyrandomize", strprintf(_("Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)"), 1));
@@ -877,9 +876,6 @@ bool AppInit2()
     // Check for -tor - as this is a privacy risk to continue, exit here
     if (GetBoolArg("-tor", false))
         return InitError(_("Error: Unsupported argument -tor found, use -onion."));
-    // Check level must be 4 for zerocoin checks
-    if (mapArgs.count("-checklevel"))
-        return InitError(_("Error: Unsupported argument -checklevel found. Checklevel must be level 4."));
 
     if (GetBoolArg("-benchmark", false))
         InitWarning(_("Warning: Unsupported argument -benchmark ignored, use -debug=bench."));
@@ -1128,9 +1124,8 @@ bool AppInit2()
             filesystem::path blocksDir = GetDataDir() / "blocks";
             filesystem::path chainstateDir = GetDataDir() / "chainstate";
             filesystem::path sporksDir = GetDataDir() / "sporks";
-            filesystem::path zerocoinDir = GetDataDir() / "zerocoin";
 
-            LogPrintf("Deleting blockchain folders blocks, chainstate, sporks and zerocoin\n");
+            LogPrintf("Deleting blockchain folders blocks, chainstate, sporks\n");
             // We delete in 4 individual steps in case one of the folder is missing already
             try {
                 if (filesystem::exists(blocksDir)){

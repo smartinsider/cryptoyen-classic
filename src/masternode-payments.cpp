@@ -174,7 +174,7 @@ void DumpMasternodePayments()
     LogPrint("masternode","Budget dump finished  %dms\n", GetTimeMillis() - nStart);
 }
 
-bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue)
+bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMinted)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (pindexPrev == NULL) return true;
@@ -190,6 +190,10 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue)
 
     if (nHeight == 0) {
         LogPrint("masternode","IsBlockValueValid() : WARNING: Couldn't find previous block\n");
+    }
+
+    if (nMinted > nExpectedValue) {
+       return false;
     }
 
     return true;

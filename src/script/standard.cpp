@@ -32,7 +32,6 @@ const char* GetTxnOutputType(txnouttype t)
     case TX_SCRIPTHASH: return "scripthash";
     case TX_MULTISIG: return "multisig";
     case TX_NULL_DATA: return "nulldata";
-    case TX_ZEROCOINMINT: return "zerocoinmint";
     }
     return NULL;
 }

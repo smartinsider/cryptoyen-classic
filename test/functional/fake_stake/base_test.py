@@ -252,16 +252,6 @@ class ZIJA_FakeStakeTest(BitcoinTestFramework):
         '''
         self.block_sig_key = CECKey()
 
-        if fZPoS:
-            self.log.info("Signing zPoS stake...")
-            # Create raw zerocoin stake TX (signed)
-            raw_stake = self.node.createrawzerocoinstake(block.prevoutStake)
-            stake_tx_signed_raw_hex = raw_stake["hex"]
-            # Get stake TX private key to sign the block with
-            stake_pkey = raw_stake["private-key"]
-            self.block_sig_key.set_compressed(True)
-            self.block_sig_key.set_secretbytes(bytes.fromhex(stake_pkey))
-
         else:
             # Create a new private key and get the corresponding public key
             self.block_sig_key.set_secretbytes(hash256(pack('<I', 0xffff)))
