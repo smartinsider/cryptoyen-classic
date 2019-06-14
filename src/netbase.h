@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Copyright (c) 2018-2019 The ZIJA developers
+// Copyright (c) 2018-2019 The PIVX developers
 // Copyright (c) 2019 The YEN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -166,7 +166,7 @@ public:
     bool SetSockAddr(const struct sockaddr* paddr);
     friend bool operator==(const CService& a, const CService& b);
     friend bool operator!=(const CService& a, const CService& b);
-    //friend bool operator<(const CService& a, const CService& b);
+    friend bool operator<(const CService& a, const CService& b);
     std::vector<unsigned char> GetKey() const;
     std::string ToString() const;
     std::string ToStringPort() const;
