@@ -166,7 +166,7 @@ public:
     bool SetSockAddr(const struct sockaddr* paddr);
     friend bool operator==(const CService& a, const CService& b);
     friend bool operator!=(const CService& a, const CService& b);
-    friend bool operator<(const CService& a, const CService& b);
+    //friend bool operator<(const CService& a, const CService& b);
     std::vector<unsigned char> GetKey() const;
     std::string ToString() const;
     std::string ToStringPort() const;
