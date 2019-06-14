@@ -116,11 +116,9 @@ bool fLiteMode = false;
 bool fEnableSwiftTX = true;
 int nSwiftTXDepth = 5;
 // Automatic Zerocoin minting
-bool fEnableZeromint = true;
 bool fEnableObfuscation = true;
 int nObfuscationRounds = 10;
 int nPreferredDenom = 0;
-const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
 int nAnonymizeCryptoYenAmount = 1000;
 int nLiquidityProvider = 0;
@@ -129,7 +127,6 @@ int64_t enforceMasternodePaymentsTime = 4085657524;
 bool fSucessfullyLoaded = false;
 /** All denominations used by obfuscation */
 std::vector<int64_t> obfuScationDenominations;
-string strBudgetMode = "";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -145,7 +142,7 @@ volatile bool fReopenDebugLog = false;
 
 /** Init OpenSSL library multithreading support */
 static CCriticalSection** ppmutexOpenSSL;
-void locking_callback(int mode, int i, const char* file, int line) NO_THREAD_SAFETY_ANALYSIS
+void locking_callback(int mode, int i, const char* file, int line)
 {
     if (mode & CRYPTO_LOCK) {
         ENTER_CRITICAL_SECTION(*ppmutexOpenSSL[i]);
@@ -533,7 +530,9 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             strHeader += rpc_user;
             strHeader += "\nrpcpassword=";
             strHeader += rpc_passwd;
-            strHeader += "\naddnode=seed1.cryptoyen.icu\naddnode=seed2.cryptoyen.icu\naddnode=seed3.cryptoyen.icu\naddnode=seed4.cryptoyen.icu\naddnode=seed5.cryptoyen.icu\n";
+            strHeader += "\nforcednsseed=1";
+			strHeader += "\nrpcallowip=127.0.0.1"
+			strHeader += "\naddnode=seed1.cryptoyen.icu\naddnode=seed2.cryptoyen.icu\naddnode=seed3.cryptoyen.icu\naddnode=seed4.cryptoyen.icu\naddnode=seed5.cryptoyen.icu\n";
             strHeader += "txindex=1\ncryptoyenstake=1\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
