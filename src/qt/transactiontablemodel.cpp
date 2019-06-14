@@ -359,8 +359,6 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
         return tr("Obfuscation Create Denominations");
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
-    case TransactionRecord::ZerocoinMint:
-        return tr("Converted YEN to zYEN");
     case TransactionRecord::ZerocoinSpend:
         return tr("Spent zYEN");
     case TransactionRecord::RecvFromZerocoinSpend:
@@ -422,7 +420,6 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
         return lookupAddress(wtx->address, tooltip) + watchAddress;
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
-    case TransactionRecord::ZerocoinMint:
     case TransactionRecord::ZerocoinSpend_Change_zCryptoYen:
         return tr("Anonymous (zYEN Transaction)");
     case TransactionRecord::StakeZYEN:

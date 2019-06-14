@@ -165,7 +165,6 @@ public:
     COutPoint prevoutStake;
     unsigned int nStakeTime;
     uint256 hashProofOfStake;
-    int64_t nMint;
     int64_t nMoneySupply;
 
     //! block header
@@ -193,7 +192,6 @@ public:
         nStatus = 0;
         nSequenceId = 0;
 
-        nMint = 0;
         nMoneySupply = 0;
         nFlags = 0;
         nStakeModifier = 0;
@@ -225,7 +223,6 @@ public:
 
         //Proof of Stake
         bnChainTrust = uint256();
-        nMint = 0;
         nMoneySupply = 0;
         nFlags = 0;
         nStakeModifier = 0;

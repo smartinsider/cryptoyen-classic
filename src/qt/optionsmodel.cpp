@@ -164,8 +164,6 @@ void OptionsModel::Init()
     if (!SoftSetArg("-lang", settings.value("language").toString().toStdString()))
         addOverriddenOption("-lang");
 
-    if (settings.contains("fZeromintEnable"))
-        SoftSetBoolArg("-enablezeromint", settings.value("fZeromintEnable").toBool());
     if (settings.contains("fEnableObfuscation"))
         SoftSetBoolArg("-enableautoconvertaddress", settings.value("fEnableObfuscation").toBool());
     if (settings.contains("nObfuscationRounds"))

@@ -2383,7 +2383,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // track money supply and mint amount info
     CAmount nMoneySupplyPrev = pindex->pprev ? pindex->pprev->nMoneySupply : 0;
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
-    pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
 
     int64_t nTime1 = GetTimeMicros();
@@ -2394,13 +2393,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
-
-    //Check that the block does not overmint
-    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
-        return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
-                                    FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
-                         REJECT_INVALID, "bad-cb-amount");
-    }
 
 
     if (!control.Wait())

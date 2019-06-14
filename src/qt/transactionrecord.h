@@ -84,7 +84,6 @@ public:
         MNReward,
         RecvFromOther,
         SendToSelf,
-        ZerocoinMint,
         ZerocoinSpend,
         RecvFromZerocoinSpend,
         ZerocoinSpend_Change_zCryptoYen,
