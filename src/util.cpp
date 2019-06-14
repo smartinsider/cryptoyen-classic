@@ -532,6 +532,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             strHeader += rpc_passwd;
             strHeader += "\nforcednsseed=1";
 			strHeader += "\nrpcallowip=127.0.0.1";
+            strHeader += "\nlisten=1";
 			strHeader += "\naddnode=seed1.cryptoyen.icu\naddnode=seed2.cryptoyen.icu\naddnode=seed3.cryptoyen.icu\naddnode=seed4.cryptoyen.icu\naddnode=seed5.cryptoyen.icu\n";
             strHeader += "txindex=1\ncryptoyenstake=1\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
