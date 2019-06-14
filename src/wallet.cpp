@@ -1607,7 +1607,6 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
                 continue;
 
             //add to our stake set
-            setCoins.insert(make_pair(out.tx, out.i));
             nAmountSelected += out.tx->vout[out.i].nValue;
 
         }
