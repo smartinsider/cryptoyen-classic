@@ -90,9 +90,6 @@ void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 {
     pblock->nTime = std::max(pindexPrev->GetMedianTimePast() + 1, GetAdjustedTime());
 
-    // Updating time can change work required on testnet:
-    if (Params().AllowMinDifficultyBlocks())
-        pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
 }
 
 std::pair<int, std::pair<uint256, uint256> > pCheckpointCache;
@@ -130,7 +127,13 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
     txNew.vout.resize(1);
-    txNew.vout[0].scriptPubKey = scriptPubKeyIn;
+    txNew.vout[0].SetEmpty();
+
+    LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
+    if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
+      txNew.vout[0].scriptPubKey = scriptPubKeyIn;
+    }
+
     pblock->vtx.push_back(txNew);
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
     pblocktemplate->vTxSigOps.push_back(-1); // updated at end
@@ -193,7 +196,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         CBlockIndex* pindexPrev = chainActive.Tip();
         const int nHeight = pindexPrev->nHeight + 1;
-        txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
+        //txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
         CCoinsViewCache view(pcoinsTip);
 
         // Priority order to process transactions
@@ -436,12 +439,14 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         //LogPrintf("Errorscan(): 3  \n");
 
         CValidationState state;
-        if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
-            LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
-            mempool.clear();
-            return NULL;
+        LogPrintf("CreateNewBlock() if CValidationState: chainActive.Height() = %s \n", chainActive.Height());
+        if (chainActive.Height() < Params().LAST_POW_BLOCK()) {
+	        if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
+	            LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
+	            mempool.clear();
+	            return NULL;
+	        }
         }
-
     }
 
     return pblocktemplate.release();
@@ -559,8 +564,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             }
 
             while (vNodes.empty() || pwallet->IsLocked() || (pwallet->GetBalance() > 0 && nReserveBalance >= pwallet->GetBalance()) || !masternodeSync.IsSynced()) {
-                nLastCoinStakeSearchInterval = 0;               
-                //LogPrintf("Errorscan(NEW TIME): scaning 01 ... \n");
+                nLastCoinStakeSearchInterval = 0;
                 if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
                 {
 					minPosTime = 60 - (GetTime() - nMintableLastCheck);
