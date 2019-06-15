@@ -167,6 +167,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 			LogPrintf("#00005\n");
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
+			LogPrintf("#00005 - INFO - %s || %s\n",nLastCoinStakeSearchInterval, nLastCoinStakeSearchTime);
         }
         LogPrintf("#00006\n");
 		
