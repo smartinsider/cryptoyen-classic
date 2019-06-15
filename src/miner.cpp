@@ -90,6 +90,10 @@ void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 {
     pblock->nTime = std::max(pindexPrev->GetMedianTimePast() + 1, GetAdjustedTime());
 
+    // Updating time can change work required on testnet:
+    if (Params().AllowMinDifficultyBlocks())
+        pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
+		LogPrintf("#00091\n");
 }
 
 std::pair<int, std::pair<uint256, uint256> > pCheckpointCache;
