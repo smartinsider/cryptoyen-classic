@@ -214,12 +214,7 @@ void CMasternodeSync::Process()
     //if (Params().NetworkID() != CBaseChainParams::REGTEST &&
     //    !IsBlockchainSynced() && RequestedMasternodeAssets > MASTERNODE_SYNC_SPORKS) return;
 
-    if(wait_blockchain_sync)
-    {
-	    LogPrintf("#00091\n");
-        nAssetSyncStarted = GetTime();
-        return;
-    }
+ 
     TRY_LOCK(cs_vNodes, lockRecv);
     if (!lockRecv) return;
 
