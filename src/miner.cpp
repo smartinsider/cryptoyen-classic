@@ -127,9 +127,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
     txNew.vout.resize(1);
-    //txNew.vout[0].SetEmpty();
-
-    LogPrintf("ZERO HERE = 001\n");
+    txNew.vout[0].SetEmpty();
 
     LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
     if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
