@@ -130,9 +130,15 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vout[0].SetEmpty();
 
     LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
-    if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
+    //if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
       txNew.vout[0].scriptPubKey = scriptPubKeyIn;
-    }
+    //}
+    if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
+      LogPrintf("SmartInsider_msg() : Params().LAST_POW_BLOCK() = %s \n", Params().LAST_POW_BLOCK());
+    } else {
+	  LogPrintf("SmartInsider_msg() : ???? \n");
+	}
+	
 
     pblock->vtx.push_back(txNew);
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
