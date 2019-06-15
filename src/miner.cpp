@@ -156,6 +156,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         bool fStakeFound = false;
         if (nSearchTime >= nLastCoinStakeSearchTime) {
             LogPrintf("#00003\n");
+			LogPrintf("#00003 - INFO - nSearchTime %s || nLastCoinStakeSearchTime %s\n", nSearchTime, nLastCoinStakeSearchTime);
 			unsigned int nTxNewTime = 0;
             if (pwallet->CreateCoinStake(*pwallet, pblock->nBits, nSearchTime - nLastCoinStakeSearchTime, txCoinStake, nTxNewTime)) {
                 pblock->nTime = nTxNewTime;
@@ -167,7 +168,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 			LogPrintf("#00005\n");
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
-			LogPrintf("#00005 - INFO - %s || %s\n",nLastCoinStakeSearchInterval, nLastCoinStakeSearchTime);
+			LogPrintf("#00005 - INFO - nLastCoinStakeSearchInterval %s || nLastCoinStakeSearchTime %s\n",nLastCoinStakeSearchInterval, nLastCoinStakeSearchTime);
         }
         LogPrintf("#00006\n");
 		
