@@ -129,8 +129,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vout.resize(1);
     //txNew.vout[0].SetEmpty();
 
+    LogPrint("staking", "ZERO HERE = 001\n");
+
     LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
     if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
+      LogPrint("staking", "#00000\n");
       txNew.vout[0].scriptPubKey = scriptPubKeyIn;
     }	
 
