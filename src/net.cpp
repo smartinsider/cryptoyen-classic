@@ -1898,8 +1898,8 @@ void RelayInv(CInv& inv)
 {
     LOCK(cs_vNodes);
     BOOST_FOREACH (CNode* pnode, vNodes){
-        if((pnode->nServices == NODE_BLOOM_WITHOUT_MN) && inv.IsMasterNodeType())continue;
-        if (pnode->nVersion >= ActiveProtocol())
+        //if((pnode->nServices == NODE_BLOOM_WITHOUT_MN) && inv.IsMasterNodeType())continue;
+        //if (pnode->nVersion >= ActiveProtocol())
             pnode->PushInventory(inv);
     }
 }
