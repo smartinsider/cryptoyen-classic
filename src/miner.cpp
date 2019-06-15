@@ -448,13 +448,13 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         CValidationState state;
         LogPrintf("CreateNewBlock() if CValidationState: chainActive.Height() = %s \n", chainActive.Height());
         LogPrintf("#00010\n");
-		//if (chainActive.Height() < Params().LAST_POW_BLOCK()) {
+		if (chainActive.Height() < Params().LAST_POW_BLOCK()) {
 	        if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
 	            LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
 	            mempool.clear();
 				return NULL;
 	        }
-        //}
+        }
     }
 
     return pblocktemplate.release();

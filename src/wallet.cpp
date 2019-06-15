@@ -2463,11 +2463,11 @@ bool CWallet::CreateCoinStake(
             CAmount nMinFee = 0;
             
                 // Set output amount
-                if (txNew.vout.size() == 3) {
-                    txNew.vout[1].nValue = ((nCredit - nMinFee) / 2 / CENT) * CENT;
-                    txNew.vout[2].nValue = nCredit - nMinFee - txNew.vout[1].nValue;
-                } else
-                    txNew.vout[1].nValue = nCredit - nMinFee;
+                //if (txNew.vout.size() == 3) {
+                //    txNew.vout[1].nValue = ((nCredit - nMinFee) / 2 / CENT) * CENT;
+                //    txNew.vout[2].nValue = nCredit - nMinFee - txNew.vout[1].nValue;
+                //} else
+                //    txNew.vout[1].nValue = nCredit - nMinFee;
             
 
             // Limit size
