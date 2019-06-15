@@ -552,46 +552,54 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 	
 	//POS time
 	unsigned int nLastPosTime = 0;
+	LogPrintf("#00070\n");
 	
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
     unsigned int nExtraNonce = 0;
     bool fLastLoopOrphan = false;
     while (fGenerateBitcoins || fProofOfStake) {
+	    LogPrintf("#00071\n");
         if (fProofOfStake) {
+		    LogPrintf("#00072\n");
             //control the amount of times the client will check for mintable coins
             if ((GetTime() - nMintableLastCheck > 5 * 60)) // 5 minute check time
             {
                 nMintableLastCheck = GetTime();
                 fMintableCoins = pwallet->MintableCoins();
             }
+			LogPrintf("#00073\n");
 
             if (chainActive.Tip()->nHeight < Params().LAST_POW_BLOCK()) {
                 MilliSleep(5000);
                 continue;
             }
+			LogPrintf("#00074\n");
 
             while (vNodes.empty() || pwallet->IsLocked() || (pwallet->GetBalance() > 0 && nReserveBalance >= pwallet->GetBalance()) || !masternodeSync.IsSynced()) {
                 nLastCoinStakeSearchInterval = 0;
+                LogPrintf("#00075\n");
                 if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
                 {
+				    LogPrintf("#00076\n");
 					minPosTime = 60 - (GetTime() - nMintableLastCheck);
 					nLastPosTime = minPosTime;
 					//LogPrintf("Scaning PoS Block ...\n");
 					//MilliSleep((minPosTime * 1000));
+					LogPrintf("#00076 - INFO - %s\n",nLastPosTime);
 					MilliSleep((5000));
-					//LogPrintf("Errorscan(NEW TIME): scaning 02 ... \n");
 					
                 }
 				nMintableLastCheck = GetTime();
-                
+                LogPrintf("#00077\n");
                 MilliSleep(5000);
                 if (!fGenerateBitcoins && !fProofOfStake)
                     continue;
             }
-             
+            LogPrintf("#00078\n");
             if (mapHashedBlocks.count(chainActive.Tip()->nHeight) && !fLastLoopOrphan) //search our map of hashed blocks, see if bestblock has been hashed yet
             {
+			    LogPrintf("#00079\n");
 			    //LogPrintf("Errorscan(): 4-1  \n");
                 if (GetTime() - mapHashedBlocks[chainActive.Tip()->nHeight] < max(pwallet->nHashInterval, (unsigned int)1)) // wait half of the nHashDrift with max wait of 3 minutes
                 {
