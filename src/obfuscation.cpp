@@ -886,7 +886,7 @@ void CObfuscationPool::CheckTimeout()
 //
 void CObfuscationPool::CheckForCompleteQueue()
 {
-    if (!fEnableObfuscation && !fMasterNode) return;
+    if (!fMasterNode) return;
 
     /* Check to see if we're ready for submissions from clients */
     //
