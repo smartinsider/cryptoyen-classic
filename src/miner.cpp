@@ -129,11 +129,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     txNew.vout.resize(1);
     //txNew.vout[0].SetEmpty();
 
-    LogPrint("staking", "ZERO HERE = 001\n");
+    LogPrintf("ZERO HERE = 001\n");
 
     LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
     if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
-      LogPrint("staking", "#00000\n");
+      LogPrintf("#00000\n");
       txNew.vout[0].scriptPubKey = scriptPubKeyIn;
     }	
 
@@ -144,9 +144,9 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     // ppcoin: if coinstake available add coinstake tx
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
    
-   LogPrint("staking", "#00001\n");
+    LogPrintf("#00001\n");
     if (fProofOfStake) {
-	    LogPrint("staking", "#00002\n");
+	    LogPrintf("#00002\n");
 	    //LogPrintf("Errorscan(CHANGING_002) \n");
 		//ONLY IN STARTUP
         boost::this_thread::interruption_point();
@@ -157,25 +157,25 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         int64_t nSearchTime = pblock->nTime; // search to current time
         bool fStakeFound = false;
         if (nSearchTime >= nLastCoinStakeSearchTime) {
-            LogPrint("staking", "#00003\n");
+            LogPrintf("#00003\n");
 			unsigned int nTxNewTime = 0;
             if (pwallet->CreateCoinStake(*pwallet, pblock->nBits, nSearchTime - nLastCoinStakeSearchTime, txCoinStake, nTxNewTime)) {
                 pblock->nTime = nTxNewTime;
                 pblock->vtx[0].vout[0].SetEmpty();
                 pblock->vtx.push_back(CTransaction(txCoinStake));
                 fStakeFound = true;
-				LogPrint("staking", "#00004\n");
+				LogPrintf("#00004\n");
             }
-			LogPrint("staking", "#00005\n");
+			LogPrintf("#00005\n");
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
         }
-        LogPrint("staking", "#00006\n");
+        LogPrintf("#00006\n");
 		
 
 		
         if (!fStakeFound) {
-            LogPrint("staking", "CreateNewBlock(): stake not found\n");
+            LogPrintf("CreateNewBlock(): stake not found\n");
             return NULL;
         }
     }
@@ -448,7 +448,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         CValidationState state;
         LogPrintf("CreateNewBlock() if CValidationState: chainActive.Height() = %s \n", chainActive.Height());
-        LogPrint("staking", "#00010\n");
+        LogPrintf("#00010\n");
 		//if (chainActive.Height() < Params().LAST_POW_BLOCK()) {
 	        if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
 	            LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
@@ -615,10 +615,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
         CBlock* pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
-        LogPrint("staking", "#00020\n");
+        LogPrintf("#00020\n");
         //Stake miner main
         if (fProofOfStake) {
-			LogPrint("staking", "#00021\n");
+			LogPrintf("#00021\n");
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
 			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
                 {
@@ -656,7 +656,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //
         // Search
         //
-		LogPrint("staking", "#00022\n");
+		LogPrintf("#00022\n");
         int64_t nStart = GetTime();
         uint256 hashTarget = uint256().SetCompact(pblock->nBits);
         while (true) {
@@ -757,7 +757,7 @@ void static ThreadBitcoinMiner(void* parg)
 
 void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)
 {
-    LogPrint("staking", "#00030\n");
+    LogPrintf("#00030\n");
     static boost::thread_group* minerThreads = NULL;
     fGenerateBitcoins = fGenerate;
 
