@@ -2285,6 +2285,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                         scriptChange = GetScriptForDestination(vchPubKey.GetID());
                     }
 
+                    LogPrintf("#00060\n");
                     CTxOut newTxOut(nChange, scriptChange);
 
                     // Never create dust outputs; if we would, just
@@ -2410,6 +2411,7 @@ bool CWallet::CreateCoinStake(
 	LogPrintf("#00042\n");
 	
     if (listInputs.empty()) {
+	    LogPrintf("#00042 - INFO - LIST EMPTY\n");
         LogPrint("staking", "CreateCoinStake(): listInputs empty\n");
         MilliSleep(50000);
         return false;
