@@ -35,9 +35,9 @@ bool CMasternodeSync::IsBlockchainSynced()
     static bool fBlockchainSynced = false;
     static int64_t lastProcess = GetTime();
 
-    // if the last call to this function was more than 45 minutes ago (client was in sleep mode) reset the sync process
-    //FIXED ( from 1h to 45min ) @SMARTINSIDER
-	if (GetTime() - lastProcess > 60 * 45) {
+    // if the last call to this function was more than 2h ago (client was in sleep mode) reset the sync process
+    //FIXED ( from 1h to 2h ) @SMARTINSIDER
+	if (GetTime() - lastProcess > 60 * 60 * 2) {
         Reset();
         fBlockchainSynced = false;
     }
@@ -53,8 +53,8 @@ bool CMasternodeSync::IsBlockchainSynced()
     CBlockIndex* pindex = chainActive.Tip();
     if (pindex == NULL) return false;
 
-    //FIXED ( from 1h to 45min ) @SMARTINSIDER
-    if (pindex->nTime + 60 * 45 < GetTime())
+    //FIXED ( from 1h to 2h ) @SMARTINSIDER
+    if (pindex->nTime + 60 * 60 * 2 < GetTime())
         return false;
 
     fBlockchainSynced = true;
