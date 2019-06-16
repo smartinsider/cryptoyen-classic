@@ -801,7 +801,8 @@ void CObfuscationPool::ChargeRandomFees()
 //
 void CObfuscationPool::CheckTimeout()
 {
-    //if (!fMasterNode) return;
+    LogPrintf("#0009900\n");
+    if (!fMasterNode) return;
 
     LogPrintf("#0009901\n");
 
