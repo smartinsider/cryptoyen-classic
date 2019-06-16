@@ -37,7 +37,7 @@ bool CMasternodeSync::IsBlockchainSynced()
 
     // if the last call to this function was more than 10h ago (client was in sleep mode) reset the sync process
     //FIXED ( from 1h to 10h ) @SMARTINSIDER10h
-	if (GetTime() - lastProcess > 60 * 60 * 10) {
+	if (GetTime() - lastProcess > 60 * 60 * 50) {
         Reset();
         fBlockchainSynced = false;
     }
@@ -54,7 +54,7 @@ bool CMasternodeSync::IsBlockchainSynced()
     if (pindex == NULL) return false;
 
     //FIXED ( from 1h to 10h ) @SMARTINSIDER10h
-    if (pindex->nTime + 60 * 60 * 10 < GetTime())
+    if (pindex->nTime + 60 * 60 * 50 < GetTime())
         return false;
 
     fBlockchainSynced = true;
