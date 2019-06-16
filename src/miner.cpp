@@ -90,10 +90,6 @@ void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 {
     pblock->nTime = std::max(pindexPrev->GetMedianTimePast() + 1, GetAdjustedTime());
 
-    // Updating time can change work required on testnet:
-    if (Params().AllowMinDifficultyBlocks())
-        pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
-		LogPrintf("#00091\n");
 }
 
 std::pair<int, std::pair<uint256, uint256> > pCheckpointCache;
@@ -135,7 +131,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     LogPrintf("CreateNewBlock() : chainActive.Height() = %s \n", chainActive.Height());
     if (chainActive.Height() >= Params().LAST_POW_BLOCK()) {
-      LogPrintf("#00000\n");
       txNew.vout[0].scriptPubKey = scriptPubKeyIn;
     }	
 
@@ -146,9 +141,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     // ppcoin: if coinstake available add coinstake tx
     static int64_t nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
    
-    LogPrintf("#00001\n");
     if (fProofOfStake) {
-	    LogPrintf("#00002\n");
 	    //LogPrintf("Errorscan(CHANGING_002) \n");
 		//ONLY IN STARTUP
         boost::this_thread::interruption_point();
@@ -159,22 +152,16 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         int64_t nSearchTime = pblock->nTime; // search to current time
         bool fStakeFound = false;
         if (nSearchTime >= nLastCoinStakeSearchTime) {
-            LogPrintf("#00003\n");
-			LogPrintf("#00003 - INFO - nSearchTime %s || nLastCoinStakeSearchTime %s\n", nSearchTime, nLastCoinStakeSearchTime);
-			unsigned int nTxNewTime = 0;
+            unsigned int nTxNewTime = 0;
             if (pwallet->CreateCoinStake(*pwallet, pblock->nBits, nSearchTime - nLastCoinStakeSearchTime, txCoinStake, nTxNewTime)) {
                 pblock->nTime = nTxNewTime;
                 pblock->vtx[0].vout[0].SetEmpty();
                 pblock->vtx.push_back(CTransaction(txCoinStake));
                 fStakeFound = true;
-				LogPrintf("#00004\n");
             }
-			LogPrintf("#00005\n");
             nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
             nLastCoinStakeSearchTime = nSearchTime;
-			LogPrintf("#00005 - INFO - nLastCoinStakeSearchInterval %s || nLastCoinStakeSearchTime %s\n",nLastCoinStakeSearchInterval, nLastCoinStakeSearchTime);
-        }
-        LogPrintf("#00006\n");
+	}
 		
 
 		
@@ -432,6 +419,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             UpdateTime(pblock, pindexPrev);
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
         pblock->nNonce = 0;
+
+        pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
         if (fProofOfStake) {
             unsigned int nExtraNonce = 0;
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
@@ -445,7 +434,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             }
 			
         }
-        pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
 
         CValidationState state;
         LogPrintf("CreateNewBlock() if CValidationState: chainActive.Height() = %s \n", chainActive.Height());
@@ -553,29 +541,24 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 	
 	//POS time
 	unsigned int nLastPosTime = 0;
-	LogPrintf("#00070\n");
 	
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
     unsigned int nExtraNonce = 0;
     bool fLastLoopOrphan = false;
     while (fGenerateBitcoins || fProofOfStake) {
-	    LogPrintf("#00071\n");
         if (fProofOfStake) {
-		    LogPrintf("#00072\n");
             //control the amount of times the client will check for mintable coins
             if ((GetTime() - nMintableLastCheck > 5 * 60)) // 5 minute check time
             {
                 nMintableLastCheck = GetTime();
                 fMintableCoins = pwallet->MintableCoins();
             }
-			LogPrintf("#00073\n");
 
             if (chainActive.Tip()->nHeight < Params().LAST_POW_BLOCK()) {
                 MilliSleep(5000);
                 continue;
             }
-			LogPrintf("#00074\n");
 
             while (vNodes.empty() || pwallet->IsLocked() || (pwallet->GetBalance() > 0 && nReserveBalance >= pwallet->GetBalance()) || !masternodeSync.IsSynced()) {
                 nLastCoinStakeSearchInterval = 0;
@@ -586,14 +569,12 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
             if (mapHashedBlocks.count(chainActive.Tip()->nHeight)) //search our map of hashed blocks, see if bestblock has been hashed yet
             {
-			    LogPrintf("#00079\n");
                 if (GetTime() - mapHashedBlocks[chainActive.Tip()->nHeight] < max(pwallet->nHashInterval, (unsigned int)1)) // wait half of the nHashDrift with max wait of 3 minutes
                 {
                     MilliSleep(5000);
                     continue;
                 }
             }
-			LogPrintf("#00079 - INFO - ??????\n");
         }
         
         //
@@ -610,10 +591,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
         CBlock* pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
-        LogPrintf("#00020\n");
         //Stake miner main
         if (fProofOfStake) {
-			LogPrintf("#00021\n");
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
 			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
                 {
@@ -634,10 +613,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
 			
 			SetThreadPriority(THREAD_PRIORITY_NORMAL);
-			LogPrintf("#000000 Errorscan(): 1  \n");
             if (!ProcessBlockFound(pblock, *pwallet, reservekey)) {
                 fLastLoopOrphan = true;
-				LogPrintf("#000000 Errorscan(): 2  \n");
                 continue;
             }
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -651,7 +628,6 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //
         // Search
         //
-		LogPrintf("#00022\n");
         int64_t nStart = GetTime();
         uint256 hashTarget = uint256().SetCompact(pblock->nBits);
         while (true) {
@@ -717,11 +693,9 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             if (pindexPrev != chainActive.Tip())
                 break;
 			
-			//FIXING_FREQUNCY_POS_MINING_SPORK_21	
-			LogPrintf("#000000 Errorscan(): 3  \n");		
+			//FIXING_FREQUNCY_POS_MINING_SPORK_21		
 			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
                 {
-				    LogPrintf("Stake Block was created too soon...\n");
 					MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
 				    
 				    //Timing of new block
@@ -753,7 +727,6 @@ void static ThreadBitcoinMiner(void* parg)
 
 void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)
 {
-    LogPrintf("#00030\n");
     static boost::thread_group* minerThreads = NULL;
     fGenerateBitcoins = fGenerate;
 

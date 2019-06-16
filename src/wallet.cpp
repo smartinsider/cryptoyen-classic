@@ -2281,7 +2281,6 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                         scriptChange = GetScriptForDestination(vchPubKey.GetID());
                     }
 
-                    LogPrintf("#00060\n");
                     CTxOut newTxOut(nChange, scriptChange);
 
                     // Never create dust outputs; if we would, just
@@ -2511,8 +2510,6 @@ bool CWallet::CreateCoinStake(
             return error("CreateCoinStake : failed to sign coinstake");
     }
 
-    LogPrintf("#00050\n");
-    LogPrintf("#00050 - INFO - Successfully generated coinstake \n");
 
     // Successfully generated coinstake
     return true;
