@@ -1900,8 +1900,8 @@ void RelayInv(CInv& inv)
     BOOST_FOREACH (CNode* pnode, vNodes){
 	    LogPrintf("#00090\n");
         //if((pnode->nServices == NODE_BLOOM_WITHOUT_MN) && inv.IsMasterNodeType())continue;
-        //if (pnode->nVersion >= ActiveProtocol())
-		    LogPrintf("#00090 - INFO - nVersion %s || ActiveProtocol - %s\n",pnode->nVersion,ActiveProtocol());			
+        if (pnode->nVersion >= ActiveProtocol())
+		    LogPrintf("#00090 - INFO - pnode->nServices %s || NODE_BLOOM_WITHOUT_MN - %s\n",NODE_BLOOM_WITHOUT_MN);			
             pnode->PushInventory(inv);
     }
 }
