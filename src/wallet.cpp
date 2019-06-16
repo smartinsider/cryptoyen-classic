@@ -2377,8 +2377,6 @@ bool CWallet::CreateCoinStake(
     txNew.vin.clear();
     txNew.vout.clear();
 
-	LogPrintf("#00040\n");
-
     // Mark coin stake transaction
     CScript scriptEmpty;
     scriptEmpty.clear();
@@ -2387,16 +2385,11 @@ bool CWallet::CreateCoinStake(
     // Choose coins to use
     CAmount nBalance = GetBalance();
 
-	LogPrintf("#00040 - INFO - nBalance %s\n",nBalance);
-
     if (mapArgs.count("-reservebalance") && !ParseMoney(mapArgs["-reservebalance"], nReserveBalance))
         return error("CreateCoinStake : invalid reserve balance amount");
 
-	LogPrintf("#00041\n");
     if (nBalance > 0 && nBalance <= nReserveBalance)
         return false;
-		
-	LogPrintf("#00041 - INFO - nReserveBalance %s\n",nReserveBalance);
 
     // Get the list of stakable inputs
     std::list<std::unique_ptr<CStakeInput> > listInputs;
@@ -2404,25 +2397,18 @@ bool CWallet::CreateCoinStake(
         LogPrintf("CreateCoinStake(): selectStakeCoins failed\n");
         return false;
     }
-	LogPrintf("#00042\n");
-	
+
     if (listInputs.empty()) {
-	    LogPrintf("#00042 - INFO - LIST EMPTY\n");
         LogPrint("staking", "CreateCoinStake(): listInputs empty\n");
         MilliSleep(50000);
         return false;
     }
-	LogPrintf("#00043\n");
 
     if (GetAdjustedTime() - chainActive.Tip()->GetBlockTime() < 60) {
-		LogPrintf("#00044\n");
         if (Params().NetworkID() == CBaseChainParams::REGTEST) {
-			LogPrintf("#00045\n");
             MilliSleep(1000);
         }
     }
-
-	LogPrintf("#00046\n");
 
     CAmount nCredit;
     CScript scriptPubKeyKernel;
@@ -2430,14 +2416,9 @@ bool CWallet::CreateCoinStake(
     int nAttempts = 0;
     for (std::unique_ptr<CStakeInput>& stakeInput : listInputs) {
         nCredit = 0;
-		
-		LogPrintf("#00047\n");
-		
         // Make sure the wallet is unlocked and shutdown hasn't been requested
         if (IsLocked() || ShutdownRequested())
             return false;
-
-		LogPrintf("#00049\n");
 
         //make sure that enough time has elapsed between
         CBlockIndex* pindex = stakeInput->GetIndexFrom();
@@ -2445,8 +2426,6 @@ bool CWallet::CreateCoinStake(
             LogPrintf("CreateCoinStake(): no pindexfrom\n");
             continue;
         }
-		
-		LogPrintf("#00049\n");
 
         // Read block header
         CBlockHeader block = pindex->GetBlockHeader();
@@ -2456,28 +2435,19 @@ bool CWallet::CreateCoinStake(
         //iterates each utxo inside of CheckStakeKernelHash()
         if (Stake(stakeInput.get(), nBits, block.GetBlockTime(), nTxNewTime, hashProofOfStake)) {
             //Double check that this will pass time requirements
-			
-			LogPrintf("#000411\n");
-			
             if (nTxNewTime <= chainActive.Tip()->GetMedianTimePast() && Params().NetworkID() != CBaseChainParams::REGTEST) {
                 LogPrintf("CreateCoinStake() : kernel found, but it is too far in the past \n");
                 continue;
             }
-			
-			LogPrintf("#000412\n");
 
             // Found a kernel
             LogPrintf("CreateCoinStake : kernel found\n");
             nCredit += stakeInput->GetValue();
 
-            LogPrintf("#000413\n");
-
             // Calculate reward
             CAmount nReward;
             nReward = GetBlockValue(chainActive.Height() + 1);
             nCredit += nReward;
-			
-			LogPrintf("#000414\n");
 
             // Create the output transaction(s)
             vector<CTxOut> vout;
@@ -2487,16 +2457,14 @@ bool CWallet::CreateCoinStake(
             }
             txNew.vout.insert(txNew.vout.end(), vout.begin(), vout.end());
 
-            LogPrintf("#000415\n");
-
             CAmount nMinFee = 0;
             
                 // Set output amount
-                //if (txNew.vout.size() == 3) {
-                //    txNew.vout[1].nValue = ((nCredit - nMinFee) / 2 / CENT) * CENT;
-                //    txNew.vout[2].nValue = nCredit - nMinFee - txNew.vout[1].nValue;
-                //} else
-                //    txNew.vout[1].nValue = nCredit - nMinFee;
+                if (txNew.vout.size() == 3) {
+                    txNew.vout[1].nValue = ((nCredit - nMinFee) / 2 / CENT) * CENT;
+                    txNew.vout[2].nValue = nCredit - nMinFee - txNew.vout[1].nValue;
+                } else
+                    txNew.vout[1].nValue = nCredit - nMinFee;
             
 
             // Limit size
@@ -2504,14 +2472,10 @@ bool CWallet::CreateCoinStake(
             if (nBytes >= DEFAULT_BLOCK_MAX_SIZE / 5)
                 return error("CreateCoinStake : exceeded coinstake size limit");
 
-            LogPrintf("#000416\n");
-
             //Masternode payment
             FillBlockPayee(txNew, nMinFee, true);
 
             {
-			
-			    LogPrintf("#000417\n");
 
                 uint256 hashTxOut = txNew.GetHash();
                 CTxIn in;
@@ -2524,21 +2488,17 @@ bool CWallet::CreateCoinStake(
                 txNew.vin.emplace_back(in);
             }
 
-            LogPrintf("#000417\n");
-
             //Mark mints as spent
             fKernelFound = true;
             break;
         }
 		
-		LogPrintf("#000418\n");
 		
         if (fKernelFound)
             break; // if kernel is found stop searching
     }
     LogPrint("staking", "%s: attempted staking %d times\n", __func__, nAttempts);
 
-    LogPrintf("#000419\n");
 
     if (!fKernelFound)
         return false;
