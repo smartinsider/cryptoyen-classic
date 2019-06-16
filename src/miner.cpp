@@ -579,25 +579,11 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
             while (vNodes.empty() || pwallet->IsLocked() || (pwallet->GetBalance() > 0 && nReserveBalance >= pwallet->GetBalance()) || !masternodeSync.IsSynced()) {
                 nLastCoinStakeSearchInterval = 0;
-                LogPrintf("#00075\n");
-                if ((GetTime() - nMintableLastCheck < 1 * 60)) // 1 minute check time
-                {
-				    LogPrintf("#00076\n");
-					minPosTime = 60 - (GetTime() - nMintableLastCheck);
-					nLastPosTime = minPosTime;
-					//LogPrintf("Scaning PoS Block ...\n");
-					//MilliSleep((minPosTime * 1000));
-					LogPrintf("#00076 - INFO - %s\n",nLastPosTime);
-					MilliSleep((5000));
-					
-                }
-				nMintableLastCheck = GetTime();
-                LogPrintf("#00077\n");
                 MilliSleep(5000);
                 if (!fGenerateBitcoins && !fProofOfStake)
                     continue;
             }
-            LogPrintf("#00078\n");
+
             if (mapHashedBlocks.count(chainActive.Tip()->nHeight)) //search our map of hashed blocks, see if bestblock has been hashed yet
             {
 			    LogPrintf("#00079\n");
@@ -648,10 +634,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             LogPrintf("CPUMiner : proof-of-stake block was signed %s \n", pblock->GetHash().ToString().c_str());
 			
 			SetThreadPriority(THREAD_PRIORITY_NORMAL);
-			//LogPrintf("Errorscan(): 6  \n");
+			LogPrintf("#000000 Errorscan(): 1  \n");
             if (!ProcessBlockFound(pblock, *pwallet, reservekey)) {
                 fLastLoopOrphan = true;
-				//LogPrintf("Errorscan(): 7  \n");
+				LogPrintf("#000000 Errorscan(): 2  \n");
                 continue;
             }
             SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -731,7 +717,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             if (pindexPrev != chainActive.Tip())
                 break;
 			
-			//FIXING_FREQUNCY_POS_MINING_SPORK_21
+			//FIXING_FREQUNCY_POS_MINING_SPORK_21	
+			LogPrintf("#000000 Errorscan(): 3  \n");		
 			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
                 {
 				    LogPrintf("Stake Block was created too soon...\n");

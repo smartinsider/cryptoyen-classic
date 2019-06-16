@@ -801,7 +801,7 @@ void CObfuscationPool::ChargeRandomFees()
 //
 void CObfuscationPool::CheckTimeout()
 {
-    if (!fMasterNode) return;
+    //if (!fMasterNode) return;
 
     // catching hanging sessions
     if (!fMasterNode) {
