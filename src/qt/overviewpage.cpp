@@ -167,7 +167,8 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     // YEN Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount cryptoyenAvailableBalance = balance - immatureBalance - nLockedBalance;
-   
+    CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
+
     // YEN Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
