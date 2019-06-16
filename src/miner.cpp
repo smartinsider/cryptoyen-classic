@@ -432,9 +432,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             UpdateTime(pblock, pindexPrev);
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
         pblock->nNonce = 0;
-
-        //LogPrintf("Errorscan(): 1  \n");
-        pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
         if (fProofOfStake) {
             unsigned int nExtraNonce = 0;
             IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
@@ -448,11 +445,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             }
 			
         }
-        //LogPrintf("Errorscan(): 3  \n");
+        pblocktemplate->vTxSigOps[0] = GetLegacySigOpCount(pblock->vtx[0]);
 
         CValidationState state;
         LogPrintf("CreateNewBlock() if CValidationState: chainActive.Height() = %s \n", chainActive.Height());
-        LogPrintf("#00010\n");
+
 		if (chainActive.Height() < Params().LAST_POW_BLOCK()) {
 	        if (!TestBlockValidity(state, *pblock, pindexPrev, false, false)) {
 	            LogPrintf("CreateNewBlock() : TestBlockValidity failed\n");
