@@ -178,7 +178,7 @@ void CMasternodeSync::ClearFulfilledRequest()
     BOOST_FOREACH (CNode* pnode, vNodes) {
         pnode->ClearFulfilledRequest("mnsync");
         pnode->ClearFulfilledRequest("mnwsync");
-        //pnode->ClearFulfilledRequest("busync");
+        pnode->ClearFulfilledRequest("busync");
     }
 }
 
@@ -249,12 +249,11 @@ void CMasternodeSync::Process()
                 if (lastMasternodeList == 0 && (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
  
 					//SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT iS ACTIVE FOREVER
-                    //LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
-                    //RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
-                    //RequestedMasternodeAttempt = 0;
-                    //lastFailure = GetTime();
-                    //nCountFailures++;
-					GetNextAsset();
+                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
+                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
+                    RequestedMasternodeAttempt = 0;
+                    lastFailure = GetTime();
+                    nCountFailures++;
                     return;
                 }
 
@@ -280,12 +279,11 @@ void CMasternodeSync::Process()
                 if (lastMasternodeWinner == 0 &&
                     (RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD * 3 || GetTime() - nAssetSyncStarted > MASTERNODE_SYNC_TIMEOUT * 5)) {
                     //SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT IS ACTIVE FOREVER
-                    //LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
-                    //RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
-                    //RequestedMasternodeAttempt = 0;
-                    //lastFailure = GetTime();
-                    //nCountFailures++;
-				    GetNextAsset();
+                    LogPrintf("CMasternodeSync::Process - ERROR - Sync has failed, will retry later\n");
+                    RequestedMasternodeAssets = MASTERNODE_SYNC_FAILED;
+                    RequestedMasternodeAttempt = 0;
+                    lastFailure = GetTime();
+                    nCountFailures++;
 				    return;
 				}
 				

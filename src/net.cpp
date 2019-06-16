@@ -1901,6 +1901,7 @@ void RelayInv(CInv& inv)
 	    LogPrintf("#00090\n");
         //if((pnode->nServices == NODE_BLOOM_WITHOUT_MN) && inv.IsMasterNodeType())continue;
         //if (pnode->nVersion >= ActiveProtocol())
+		    LogPrintf("#00090 - INFO - nVersion %s || ActiveProtocol - %s\n",pnode->nVersion,ActiveProtocol());			
             pnode->PushInventory(inv);
     }
 }
