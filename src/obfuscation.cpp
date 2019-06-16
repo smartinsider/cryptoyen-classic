@@ -803,6 +803,8 @@ void CObfuscationPool::CheckTimeout()
 {
     //if (!fMasterNode) return;
 
+    LogPrintf("#0009901\n");
+
     // catching hanging sessions
     if (!fMasterNode) {
         switch (state) {
@@ -821,10 +823,13 @@ void CObfuscationPool::CheckTimeout()
         }
     }
 
+    LogPrintf("#0009902\n");
+
     // check Obfuscation queue objects for timeouts
     int c = 0;
     vector<CObfuscationQueue>::iterator it = vecObfuscationQueue.begin();
     while (it != vecObfuscationQueue.end()) {
+	    LogPrintf("#0009903\n");
         if ((*it).IsExpired()) {
             LogPrint("obfuscation", "CObfuscationPool::CheckTimeout() : Removing expired queue entry - %d\n", c);
             it = vecObfuscationQueue.erase(it);
@@ -832,7 +837,7 @@ void CObfuscationPool::CheckTimeout()
             ++it;
         c++;
     }
-
+    LogPrintf("#0009904\n");
     int addLagTime = 0;
     if (!fMasterNode) addLagTime = 10000; //if we're the client, give the server a few extra seconds before resetting.
 
@@ -879,6 +884,7 @@ void CObfuscationPool::CheckTimeout()
         UpdateState(POOL_STATUS_ERROR);
         lastMessage = _("Signing timed out.");
     }
+	LogPrintf("#0009905\n");
 }
 
 //
