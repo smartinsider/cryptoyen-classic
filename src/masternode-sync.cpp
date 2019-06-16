@@ -301,6 +301,8 @@ void CMasternodeSync::Process()
 
                 //if(!mnodeman.WinnersUpdate(pnode))
                 //    continue;
+                if (pnode->HasFulfilledRequest("busync")) continue;
+                pnode->FulfilledRequest("busync");
 
                 ++RequestedMasternodeAttempt;
 
