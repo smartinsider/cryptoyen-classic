@@ -170,7 +170,49 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             sub.credit = nCredit - nChange;
             parts.append(sub);
             parts.last().involvesWatchAddress = involvesWatchAddress; // maybe pass to TransactionRecord as constructor argument
+        } else if (fAllFromMe) {
+            //
+            // Debit
+            //
+            CAmount nTxFee = nDebit - wtx.GetValueOut();
 
+            for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++) {
+                const CTxOut& txout = wtx.vout[nOut];
+                TransactionRecord sub(hash, nTime);
+                sub.idx = parts.size();
+                sub.involvesWatchAddress = involvesWatchAddress;
+
+                if (wallet->IsMine(txout)) {
+                    // Ignore parts sent to self, as this is usually the change
+                    // from a transaction sent back to our own address.
+                    continue;
+                }
+
+                CTxDestination address;
+                if (ExtractDestination(txout.scriptPubKey, address)) {
+                    // Sent to CGen Address
+                    sub.type = TransactionRecord::SendToAddress;
+                    sub.address = CBitcoinAddress(address).ToString();
+                } else {
+                    // Sent to IP, or other non-address transaction like OP_EVAL
+                    sub.type = TransactionRecord::SendToOther;
+                    sub.address = mapValue["to"];
+                }
+
+                if (mapValue["DS"] == "1") {
+                    sub.type = TransactionRecord::Obfuscated;
+                }
+
+                CAmount nValue = txout.nValue;
+                /* Add fee to first output */
+                if (nTxFee > 0) {
+                    nValue += nTxFee;
+                    nTxFee = 0;
+                }
+                sub.debit = -nValue;
+
+                parts.append(sub);
+            }
         } else {
             //
             // Mixed debit transaction, can't break down payees
