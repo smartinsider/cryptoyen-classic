@@ -345,8 +345,8 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
         return tr("YEN Stake");
-    case TransactionRecord::YouTube:
-        return tr("YouTube Mining");
+    //case TransactionRecord::YouTube:
+    //    return tr("YouTube Mining");
     default:
         return QString();
     }
@@ -357,7 +357,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::YouTube:
+    //case TransactionRecord::YouTube:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -389,8 +389,8 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToAddress:
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-	case TransactionRecord::YouTube:
-        return lookupAddress(wtx->address, tooltip);
+	//case TransactionRecord::YouTube:
+    //    return lookupAddress(wtx->address, tooltip);
     case TransactionRecord::Obfuscated:
         return lookupAddress(wtx->address, tooltip) + watchAddress;
     case TransactionRecord::SendToOther:
