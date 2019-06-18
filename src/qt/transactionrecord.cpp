@@ -43,6 +43,8 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     if (wtx.IsCoinStake()) {
         TransactionRecord sub(hash, nTime);
         CTxDestination address;
+        if (!ExtractDestination(wtx.vout[1].scriptPubKey, address))
+            return parts;
 
         if (isminetype mine = wallet->IsMine(wtx.vout[1])) {
             // YEN stake reward
