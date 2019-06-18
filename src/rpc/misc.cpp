@@ -95,6 +95,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
                     services+= "BLOOM/";
                     break;
                 case NODE_BLOOM_WITHOUT_MN:
+                    services+= "BLOOM_ZC/";
                     break;
                 default:
                     services+= "UNKNOWN/";
