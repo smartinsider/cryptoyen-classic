@@ -2251,16 +2251,16 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                     if (coinControl && !boost::get<CNoDestination>(&coinControl->destChange)) {
                         scriptChange = GetScriptForDestination(coinControl->destChange);
 
-                        //vector<CTxOut>::iterator it = txNew.vout.begin();
-                        //while (it != txNew.vout.end()) {
-                        //    if (scriptChange == it->scriptPubKey) {
-                        //        it->nValue += nChange;
-                        //        nChange = 0;
-                        //        reservekey.ReturnKey();
-                        //        combineChange = true;
-                        //        break;
-                        //    }
-                         //   ++it;
+                        vector<CTxOut>::iterator it = txNew.vout.begin();
+                        while (it != txNew.vout.end()) {
+                            if (scriptChange == it->scriptPubKey) {
+                                it->nValue += nChange;
+                                nChange = 0;
+                                reservekey.ReturnKey();
+                                combineChange = true;
+                                break;
+                            }
+                            ++it;
                         }
                     }
 
