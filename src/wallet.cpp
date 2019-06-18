@@ -1211,11 +1211,12 @@ void CWalletTx::GetAmounts(list<COutputEntry>& listReceived,
         // In either case, we need to get the destination address
         CTxDestination address;
         
-        if (!IsCoinStake() && !IsCoinBase()) {
-            LogPrintf("CWalletTx::GetAmounts: Unknown transaction type found, txid %s\n", this->GetHash().ToString());
+		if (!ExtractDestination(txout.scriptPubKey, address)) {
+            if (!IsCoinStake() && !IsCoinBase()) {
+                LogPrintf("CWalletTx::GetAmounts: Unknown transaction type found, txid %s\n", this->GetHash().ToString());
+            }
+            address = CNoDestination();
         }
-        address = CNoDestination();
-        
 
         COutputEntry output = {address, txout.nValue, (int)i};
 
