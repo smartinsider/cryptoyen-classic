@@ -61,12 +61,17 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
       (29036, uint256("0x59b9e4e13ad004aa5cc45075a9f57d0917dbe4b8f118eec26cf33522585746c3"))
       (29045, uint256("0x7e7d709c3606f60cb46a3e7c70bc31a8e074335d237265c92ea1d6ead7fe8f4d"))
       (33606, uint256("0x65fb3aba3b37bcd42488fab09d72e5d27d9bdbe5cbf2883fdd04e755995c4e67")) 
-      (33763, uint256("0x776265ffd670337b4286e6fef49a55241bef8f2cd9ef960005efb19302574607")) //last checkpont
+      (33763, uint256("0x776265ffd670337b4286e6fef49a55241bef8f2cd9ef960005efb19302574607")) 
+      (80000, uint256("0x3623f034aa19b5b36d74a7a6a4262505f27913a102a72236929b5a9d5bc6d098"))
+	  // 3623f034aa19b5b36d74a7a6a4262505f27913a102a72236929b5a9d5bc6d098
+	  // 1574679184
+      //(80000, uint256("0x3623f034aa19b5b36d74a7a6a4262505f27913a102a72236929b5a9d5bc6d098"))
+      //(80008, uint256("0x92c7a8d01cda2f3dccd85feb192021526280fdb6977bccfd4526f082011538e1"))
     ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1560856670, // * UNIX timestamp of last checkpoint block
-    68899,          // * total number of transactions between genesis and last checkpoint
+    1574679184, // * UNIX timestamp of last checkpoint block
+    161717,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -117,7 +122,7 @@ public:
         nTargetSpacing = 1 * 60;  // YEN: 1 minute
         nMaturity = 60;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 15000000 * COIN;
+        nMaxMoneyOut = 31000000 * COIN;
         strDevpubkey = "0242f14833b2fed224f1a4d38972f4d71d511d9613934da5091314525be7001e9f";
 
 
@@ -152,11 +157,11 @@ public:
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0000082cafc7c356e4ec3d9c25b00c7b463edc466fa5c8fcfdbcba59c34f2c72"));
         assert(genesis.hashMerkleRoot == uint256("3bbfa4b9fe24355127acdd9ebe919cde06fed041f7f0128623c4e61e743bf338"));
-        vSeeds.push_back(CDNSSeedData("seed1.cryptoyen.icu", "seed1.cryptoyen.icu"));
-        vSeeds.push_back(CDNSSeedData("seed2.cryptoyen.icu", "seed2.cryptoyen.icu"));
-        vSeeds.push_back(CDNSSeedData("seed3.cryptoyen.icu", "seed3.cryptoyen.icu"));
-        vSeeds.push_back(CDNSSeedData("seed4.cryptoyen.icu", "seed4.cryptoyen.icu"));
-        vSeeds.push_back(CDNSSeedData("seed5.cryptoyen.icu", "seed5.cryptoyen.icu"));
+        vSeeds.push_back(CDNSSeedData("seed1.divinelive.club", "seed1.divinelive.club"));
+        vSeeds.push_back(CDNSSeedData("seed2.divinelive.club", "seed2.divinelive.club"));
+        vSeeds.push_back(CDNSSeedData("seed3.divinelive.club", "seed3.divinelive.club"));
+        vSeeds.push_back(CDNSSeedData("seed4.divinelive.club", "seed4.divinelive.club"));
+        vSeeds.push_back(CDNSSeedData("seed5.divinelive.club", "seed5.divinelive.club"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 78);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 100);
@@ -215,7 +220,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // YEN: 1 day
         nTargetSpacing = 1 * 60;  // YEN: 1 minute
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 120;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT

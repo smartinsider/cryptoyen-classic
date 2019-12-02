@@ -407,7 +407,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         // Compute final coinbase transaction.
-        pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
+		//pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight);
         if (!fProofOfStake) {
             pblock->vtx[0] = txNew;
             pblocktemplate->vTxFees[0] = -nFees;
@@ -446,7 +446,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 	        }
         }
     }
-
+    pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
     return pblocktemplate.release();
 }
 
@@ -594,10 +594,10 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //Stake miner main
         if (fProofOfStake) {
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
-			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
+			if ((GetTime() - nLastPosTime < 1 * 60 * 10)) // 1 minute check time
                 {
-				    LogPrintf("Stake Block was created too soon...\n");
-					MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
+				    //LogPrintf("Stake Block was created too soon...\n");
+					MilliSleep(((60 * 10 - (GetTime() - nLastPosTime)) * 1000));
 			     
 				    //Timing of new block
 				    continue;
@@ -694,9 +694,9 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 break;
 			
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21		
-			if ((GetTime() - nLastPosTime < 1 * 60)) // 1 minute check time
+			if ((GetTime() - nLastPosTime < 1 * 60 * 10)) // 1 minute check time
                 {
-					MilliSleep(((60 - (GetTime() - nLastPosTime)) * 1000));
+					MilliSleep(((60 * 10 - (GetTime() - nLastPosTime)) * 1000));
 				    
 				    //Timing of new block
 				    break;

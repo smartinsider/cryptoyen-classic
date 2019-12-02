@@ -35,8 +35,12 @@ bool CMasternodeSync::IsBlockchainSynced()
     static bool fBlockchainSynced = false;
     static int64_t lastProcess = GetTime();
 
-    // if the last call to this function was more than 1h ago (client was in sleep mode) reset the sync process
-	if (GetTime() - lastProcess > 60 * 60 * 1) {
+
+    // @SMARTINSIDER+DIVINELIFE
+    static int64_t SleapModeTime = 1; // def is 1
+    
+    //  if the last call to this function was more than 1h ago (client was in sleep mode) reset the sync process
+	if (GetTime() - lastProcess > 60 * 60 * SleapModeTime) {
         Reset();
         fBlockchainSynced = false;
     }
@@ -53,7 +57,7 @@ bool CMasternodeSync::IsBlockchainSynced()
     if (pindex == NULL) return false;
 
     //FIXED ( from 1h to 1h ) @SMARTINSIDER10h
-    if (pindex->nTime + 60 * 60 * 1 < GetTime())
+    if (pindex->nTime + 60 * 60 * SleapModeTime < GetTime())
         return false;
 
     fBlockchainSynced = true;

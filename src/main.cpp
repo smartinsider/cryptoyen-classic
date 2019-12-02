@@ -76,7 +76,7 @@ unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 bool fClearSpendCache = false;
 
-unsigned int nStakeMinAge = 60 * 60;
+unsigned int nStakeMinAge = 4 * 60 * 60;
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in ucryptoyen) are considered zero fee (for relaying and mining)
@@ -1608,13 +1608,9 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        return 1 * COIN;
-    }
-
     int64_t nSubsidy = 0;
-    if (nHeight < 2){ //PREMINE 600000
-        nSubsidy = 600000 * COIN;
+    if (nHeight < 2){ 
+        nSubsidy = 600000 * COIN; //PREMINE 600'000	
     } else {
         nSubsidy = 5 * COIN;
     }
@@ -1627,6 +1623,15 @@ int64_t GetDevFundPayment(int nHeight, int64_t blockValue)
     ret_val = blockValue * 15 / 100; //15% of the reward while POS
     return ret_val;
 }
+
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
+{
+    int64_t ret = 0;
+    ret = blockValue * 70 / 100; //70% of the block reward
+    return ret;
+}
+
+
 
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
@@ -1850,18 +1855,6 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
             ret = blockValue * .01;
         }
     }
-    return ret;
-}
-
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
-{
-    int64_t ret = 0;
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if (nHeight < 200)
-           return 0;
-    }
-	
-    ret = blockValue * 70 / 100; //70% of the block reward
     return ret;
 }
 
