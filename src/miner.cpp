@@ -594,7 +594,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         //Stake miner main
         if (fProofOfStake) {
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21
-			if ((GetTime() - nLastPosTime < 1 * 60 * 10)) // 1 minute check time
+			if ((GetTime() - nLastPosTime < 60 * 10)) // 1 minute check time
                 {
 				    //LogPrintf("Stake Block was created too soon...\n");
 					MilliSleep(((60 * 10 - (GetTime() - nLastPosTime)) * 1000));
@@ -694,7 +694,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 break;
 			
 			//FIXING_FREQUNCY_POS_MINING_SPORK_21		
-			if ((GetTime() - nLastPosTime < 1 * 60 * 10)) // 1 minute check time
+			if ((GetTime() - nLastPosTime < 60 * 10)) // 1 minute check time
                 {
 					MilliSleep(((60 * 10 - (GetTime() - nLastPosTime)) * 1000));
 				    
