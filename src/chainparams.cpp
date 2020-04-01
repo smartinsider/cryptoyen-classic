@@ -64,8 +64,8 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
       (33763, uint256("0x776265ffd670337b4286e6fef49a55241bef8f2cd9ef960005efb19302574607"))  
       (79998, uint256("0x4d41833080b318666e7097532edf4cc4c518bb19450ed45db3a2fe2b4d890579"))
       (80000, uint256("0x3623f034aa19b5b36d74a7a6a4262505f27913a102a72236929b5a9d5bc6d098"))
-	  (80008, uint256("0x92c7a8d01cda2f3dccd85feb192021526280fdb6977bccfd4526f082011538e1"))
-	  (80213, uint256("0xfe92c41cb3e872d492fdff7fe50d4db15699880ec01c67b5bee86150e5296619"))
+      (80008, uint256("0x92c7a8d01cda2f3dccd85feb192021526280fdb6977bccfd4526f082011538e1"))
+      (80213, uint256("0xfe92c41cb3e872d492fdff7fe50d4db15699880ec01c67b5bee86150e5296619"))
       
     ;
 static const Checkpoints::CCheckpointData data = {
@@ -157,11 +157,10 @@ public:
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0000082cafc7c356e4ec3d9c25b00c7b463edc466fa5c8fcfdbcba59c34f2c72"));
         assert(genesis.hashMerkleRoot == uint256("3bbfa4b9fe24355127acdd9ebe919cde06fed041f7f0128623c4e61e743bf338"));
-        vSeeds.push_back(CDNSSeedData("seed1.divinelive.club", "seed1.divinelive.club"));
-        vSeeds.push_back(CDNSSeedData("seed2.divinelive.club", "seed2.divinelive.club"));
-        vSeeds.push_back(CDNSSeedData("seed3.divinelive.club", "seed3.divinelive.club"));
-        vSeeds.push_back(CDNSSeedData("seed4.divinelive.club", "seed4.divinelive.club"));
-        vSeeds.push_back(CDNSSeedData("seed5.divinelive.club", "seed5.divinelive.club"));
+
+	//DNS SEEDS
+        vSeeds.push_back(CDNSSeedData("divinelife.club", "seeder1.divinelife.club"));
+        vSeeds.push_back(CDNSSeedData("divinelife.club", "seeder1.divinelife.club"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 78);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 100);
@@ -171,8 +170,6 @@ public:
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
-
-
         
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
@@ -243,9 +240,6 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testnet01.cryptoyen.icu", "testnet01.cryptoyen.icu"));
-        vSeeds.push_back(CDNSSeedData("testnet02.cryptoyen.icu", "testnet02.cryptoyen.icu"));
-        vSeeds.push_back(CDNSSeedData("testnet03.cryptoyen.icu", "testnet03.cryptoyen.icu"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet cryptoyen addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet cryptoyen script addresses start with '8' or '9'
