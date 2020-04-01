@@ -533,8 +533,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             strHeader += "\nforcednsseed=1";
 			strHeader += "\nrpcallowip=127.0.0.1";
             strHeader += "\nlisten=1";
-			strHeader += "\naddnode=seed1.divinelive.club\naddnode=seed2.divinelive.club\naddnode=seed3.divinelive.club\naddnode=seed4.divinelive.club\naddnode=seed5.divinelive.club\n";
-            strHeader += "txindex=1\ncryptoyenstake=1\n";
+            strHeader += "\ntxindex=1\ncryptoyenstake=1\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
 	}

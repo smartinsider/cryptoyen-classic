@@ -84,7 +84,7 @@
 					 </size>
 					</property>
                   <property name="text">
-                   <string>The wallet is not currently ready for the use of YouTube mining,</string>
+                   <string>Youtube mining supporting only in HD web wallet:</string>
                   </property>
                  </widget>
                 </item>
@@ -92,14 +92,7 @@
 					
                  <widget class="QLabel" name="YtmL3">
                   <property name="text">
-                   <string>however you can still visit the tab in the wallet and see where it will be. </string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="QLabel" name="YtmL4">
-                  <property name="text">
-                   <string>It will be ready to use hopefully in an update in the coming weeks.</string>
+                   <string>https://wallet.cryptoyen.icu</string>
                   </property>
                  </widget>
                 </item>

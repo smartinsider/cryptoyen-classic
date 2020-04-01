@@ -24,10 +24,3 @@ YEN Core integration/staging repository
 <tr><td>PoS</td><td>0,75 YEN</td><td>15%</td></tr>
 <tr><td>YTM (YouTube Mining)</td><td>0,75 YEN</td><td>15%</td></tr>
 </table>
-
-#main seeds
- - seed1.cryptoyen.icu
- - seed2.cryptoyen.icu
- - seed3.cryptoyen.icu
- - seed4.cryptoyen.icu
- - seed5.cryptoyen.icu
