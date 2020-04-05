@@ -7,8 +7,7 @@ YEN Core integration/staging repository
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Coin Maturity</td><td>60 Seconds</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>15 000 000 YEN</td></tr>
-<tr><td>Premine</td><td>600 000 YEN (4%)</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>31 000 000 YEN</td></tr>
 <tr><td>Block reword</td><td>5 YEN</td></tr>
 <tr><td>P2P PORT</td><td>37701</td></tr>
 <tr><td>RPC PORT</td><td>37702</td></tr>
