@@ -23,3 +23,10 @@ YEN Core integration/staging repository
 <tr><td>PoS</td><td>0,75 YEN</td><td>15%</td></tr>
 <tr><td>YTM (YouTube Mining)</td><td>0,75 YEN</td><td>15%</td></tr>
 </table>
+
+
+### Donate
+BTC: 1DBHibb7T6WjtiJVHpi966VsTPFrMRCZ7Q
+
+
+
