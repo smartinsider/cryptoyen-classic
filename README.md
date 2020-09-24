@@ -26,8 +26,10 @@ YEN Core integration/staging repository
 
 
 ### Donate
-BTC: 1DBHibb7T6WjtiJVHpi966VsTPFrMRCZ7Q
-YEN: Yh6PCHasATneVLfcgbG7CAdwBSqXK3oxEH
-HLF: Hh1E7jxQTTYUo7opT3o31uq9UiuaP9aUJ4
+BTC: **1DBHibb7T6WjtiJVHpi966VsTPFrMRCZ7Q**
+
+YEN: **Yh6PCHasATneVLfcgbG7CAdwBSqXK3oxEH**
+
+HLF: **Hh1E7jxQTTYUo7opT3o31uq9UiuaP9aUJ4**
 
 
