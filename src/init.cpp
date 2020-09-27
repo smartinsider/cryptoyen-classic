@@ -424,23 +424,23 @@ std::string HelpMessage(HelpMessageMode mode)
 
     
     //YouTube mining section
-    strUsage += HelpMessageGroup(_("Youtube mining options:"));
+    // strUsage += HelpMessageGroup(_("Youtube mining options:"));
 
     //VIDEO SETUP
-    strUsage += HelpMessageOpt("-setvideo=<videoid>", _("Put the video ID. Id will show you a unique text wich you need to put in description under you video."));
+    // strUsage += HelpMessageOpt("-setvideo=<videoid>", _("Put the video ID. Id will show you a unique text wich you need to put in description under you video."));
 
     //GLOBAL
-    strUsage += HelpMessageOpt("-ytmpooltotal", _("This option will show you a total pool revord"));
-    strUsage += HelpMessageOpt("-ytmpoolreward", _("This option will show you a reword per one viev"));
-    strUsage += HelpMessageOpt("-ytmtotalview", _("This option will show you the reword per one view"));
-    strUsage += HelpMessageOpt("-ytmnextpayment", _("Show the date and time of next payment."));
+    // strUsage += HelpMessageOpt("-ytmpooltotal", _("This option will show you a total pool revord"));
+    // strUsage += HelpMessageOpt("-ytmpoolreward", _("This option will show you a reword per one viev"));
+    // strUsage += HelpMessageOpt("-ytmtotalview", _("This option will show you the reword per one view"));
+    // strUsage += HelpMessageOpt("-ytmnextpayment", _("Show the date and time of next payment."));
 
     //VIDEO INFO
-    strUsage += HelpMessageOpt("-videoinfo=<videoid>", _("Put the video ID. Id will show you a unique text wich you need to put in description under you video."));
-    strUsage += HelpMessageOpt("-videoinfoglobal", _("Put the video ID. Id will show you a unique text wich you need to put in description under you video."));
+    // strUsage += HelpMessageOpt("-videoinfo=<videoid>", _("Put the video ID. Id will show you a unique text wich you need to put in description under you video."));
+    // strUsage += HelpMessageOpt("-videoinfoglobal", _("Put the video ID. Id will show you a unique text wich you need to put in description under you video."));
 
     //STATISTICS
-    strUsage += HelpMessageOpt("-gettop", _("Top video"));
+    // strUsage += HelpMessageOpt("-gettop", _("Top video"));
     
     
     
@@ -1618,7 +1618,7 @@ bool AppInit2()
         fVerifyingBlocks = false;
         //YTM_IMPLEMENT
         //Inititalize YouTube Mining (YTM)
-        uiInterface.InitMessage(_("Syncing YouTube Mining (YTM) pool..."));
+        //uiInterface.InitMessage(_("Syncing YouTube Mining (YTM) pool..."));
         
 
     }

@@ -21,8 +21,9 @@ YEN Core integration/staging repository
 <th>Structure</th><th>Coins</th><th>Percentage</th>
 <tr><td>MN</td><td>3,50 YEN</td><td>70%</td></tr>
 <tr><td>PoS</td><td>0,75 YEN</td><td>15%</td></tr>
-<tr><td>YTM (YouTube Mining)</td><td>0,75 YEN</td><td>15%</td></tr>
+<tr><td>AM (Anime Mining)</td><td>0,75 YEN</td><td>15%</td></tr>
 </table>
+
 
 
 ### Donate

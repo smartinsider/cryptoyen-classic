@@ -111,7 +111,7 @@ private:
     QAction* multisigSignAction;
     QAction* aboutAction;
     QAction* receiveCoinsAction;
-    QAction* governanceAction;
+//    QAction* governanceAction;
     QAction* optionsAction;
     QAction* toggleHideAction;
     QAction* encryptWalletAction;
