@@ -40,7 +40,7 @@ namespace GUIUtil
 QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStr(qint64 nTime);
 
-// Render YEN addresses in monospace font
+// Render YENC addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Set up widgets for address and amounts

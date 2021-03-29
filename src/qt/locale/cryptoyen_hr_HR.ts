@@ -62,11 +62,11 @@
         <translation>Adresa primatelja</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>To su vaše YEN adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>To su vaše YEN adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Unesite YEN adresu koju želite šifrirati pomoću BIP 38. Unesite zaporku u srednjem okviru. Pritisnite šifriranje za izračunavanje šifriranog privatnog ključa.</translation>
     </message>
     <message>
-        <source>The YEN address to encrypt</source>
+        <source>The YENC address to encrypt</source>
         <translation>YEN adresa za šifriranje</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this YEN address</source>
+        <source>Encrypt the private key for this YENC address</source>
         <translation>Šifriranje privatnog ključa za ovu YEN adresu</translation>
     </message>
     <message>
@@ -645,7 +645,7 @@
         <translation>YEN Core</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>Pošaljite kovanice na YEN adresu</translation>
     </message>
     <message>
@@ -677,11 +677,11 @@
         <translation>Izmijenite konfiguracijske opcije za YEN</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
         <translation>Potpišite poruke s vašim YEN adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
         <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim YEN adresama</translation>
     </message>
     <message>
@@ -1161,7 +1161,7 @@ Višestruko slanje: %1</translation>
         <translation>Uređivanje adrese slanja</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
+        <source>The entered address "%1" is not a valid YENC address.</source>
         <translation>Unesena adresa "%1" nije važeća YEN adresa.</translation>
     </message>
     <message>
@@ -1435,8 +1435,8 @@ Višestruko slanje: %1</translation>
         <translation>Unesite adresu za slanje</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YEN addresses after it matures.
-To Add: enter percentage to give and YEN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YENC addresses after it matures.
+To Add: enter percentage to give and YENC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svoje nagrade za ulog ili masternode  nagrade na popis drugih YEN adresa nakon što sazrijete.
@@ -2242,7 +2242,7 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Ne može se pokrenuti YEN: clik-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid YEN address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid YENC address or malformed URI parameters.</source>
         <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom YEN adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
@@ -2440,7 +2440,7 @@ zYEN su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominac
         <translation>Platiti:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The YENC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>YEN adresa za slanje uplate. Stvara lokalno plaćanje za sebe kada je prazno.</translation>
     </message>
     <message>
@@ -2943,7 +2943,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter a YEN address (e.g. %1)</source>
+        <source>Enter a YENC address (e.g. %1)</source>
         <translation>Unesite YEN adresu (npr., %1)</translation>
     </message>
     <message>
@@ -3833,7 +3833,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Alat za podjelu blocka ne funkcionira s više adresa. Pokušajte ponovo.</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
+        <source>Warning: Invalid YENC address</source>
         <translation>Upozorenje: Nevažeća YEN adresa</translation>
     </message>
     <message>
@@ -3932,7 +3932,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Platiti:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
+        <source>The YENC address to send the payment to</source>
         <translation>YEN adresa za slanje uplate</translation>
     </message>
     <message>
@@ -4022,7 +4022,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Možete potpisati poruke s vašim adresama kako biste dokazali da ih posjedujete. Pazite da ne potpišete ništa nejasno, jer napadi za krađu identiteta mogu Vas pokušati uvjeriti da vam potpišu identitet. Potpišite samo detalje oko kojih se slažete.</translation>
     </message>
     <message>
-        <source>The YEN address to sign the message with</source>
+        <source>The YENC address to sign the message with</source>
         <translation>YEN adresa za potpisivanje poruke</translation>
     </message>
     <message>
@@ -4054,15 +4054,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
+        <source>Sign the message to prove you own this YENC address</source>
         <translation>Potpišite poruku da biste dokazali da ste vlasnik ove YEN adrese</translation>
     </message>
     <message>
-        <source>The YEN address the message was signed with</source>
+        <source>The YENC address the message was signed with</source>
         <translation>YEN adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified YEN address</source>
+        <source>Verify the message to ensure it was signed with the specified YENC address</source>
         <translation>Potvrdite poruku kako biste bili sigurni da je potpisana s navedenom YEN adresom</translation>
     </message>
     <message>

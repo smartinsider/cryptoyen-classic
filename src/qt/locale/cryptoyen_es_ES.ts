@@ -62,11 +62,11 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Estas son sus direcciones de YEN para enviar pagos. Compruebe siempre la cantidad así como la dirección de destino antes de enviar moneda.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Estas son sus direcciones de YEN para recibir pagos. Es recomendable que use una dirección nueva para cada transacción.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Ingrese una dirección YEN que le gustaría encriptar usando BIP 38. Ingrese una contraseña en el cuadro del medio. Presione encriptar para calcular la clave privada encriptada.</translation>
     </message>
     <message>
-        <source>The YEN address to encrypt</source>
+        <source>The YENC address to encrypt</source>
         <translation>La dirección YEN a encriptar</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this YEN address</source>
+        <source>Encrypt the private key for this YENC address</source>
         <translation>Cifrar la llave privada para esta dirección YEN</translation>
     </message>
     <message>
@@ -537,7 +537,7 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The YEN address to sign the message with</source>
+        <source>The YENC address to sign the message with</source>
         <translation>Dirección YEN con la que firmar el mensaje</translation>
     </message>
     <message>
@@ -561,7 +561,7 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
+        <source>Sign the message to prove you own this YENC address</source>
         <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección YEN</translation>
     </message>
     <message>

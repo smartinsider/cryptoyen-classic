@@ -62,11 +62,11 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Aquestes són les teves adreces YEN per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Aquestes són les teves adreces YEN per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
@@ -425,7 +425,7 @@
         <translation>YEN Core</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>Envia monedes a una adreça YEN</translation>
     </message>
     <message>
@@ -805,7 +805,7 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
+        <source>The entered address "%1" is not a valid YENC address.</source>
         <translation>L'adreça introduïda "%1" no és una adreça YEN vàlida.</translation>
     </message>
     <message>

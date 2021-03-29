@@ -62,11 +62,11 @@
         <translation>받을 주소</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>이 주소들은 송금할 YEN 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>이 주소들은 입금 받을 YEN 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>BIP 38 알고리즘으로 암호화할 YEN 지갑 주소를 입력. 중간박스에 암호구절 입력. 암호화된 개인키를 계산하시려면 암호화 클릭</translation>
     </message>
     <message>
-        <source>The YEN address to encrypt</source>
+        <source>The YENC address to encrypt</source>
         <translation>암호화할 YEN 주소</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this YEN address</source>
+        <source>Encrypt the private key for this YENC address</source>
         <translation>이 YEN 주소의 개인키 암호화</translation>
     </message>
     <message>
@@ -641,7 +641,7 @@
         <translation>YEN Core</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>YEN 주소로 입금하기</translation>
     </message>
     <message>
@@ -673,11 +673,11 @@
         <translation>YEN에 대한 구성 옵션 수정</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
         <translation>YEN 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
         <translation>메시지가 지정된 YEN 주소로 서명되었는지 확인합니다.</translation>
     </message>
     <message>
@@ -1157,7 +1157,7 @@ Address: %4
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
+        <source>The entered address "%1" is not a valid YENC address.</source>
         <translation>입력된 주소 "%1"는 올바른 YEN 주소가 아닙니다.</translation>
     </message>
     <message>
@@ -1431,8 +1431,8 @@ Address: %4
         <translation>보낼 주소 입력</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YEN addresses after it matures.
-To Add: enter percentage to give and YEN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YENC addresses after it matures.
+To Add: enter percentage to give and YENC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>다중전송을 사용하면 성취 한 뒤 다른 YEN 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
@@ -2171,7 +2171,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>YEN을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid YEN address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid YENC address or malformed URI parameters.</source>
         <translation>URI를 분석할 수 없습니다! 이는 잘못된 YEN 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
@@ -2369,7 +2369,7 @@ zYEN는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
         <translation>지불 &amp;대상:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The YENC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>YEN를 전송할 YEN 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
@@ -2876,7 +2876,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter a YEN address (e.g. %1)</source>
+        <source>Enter a YENC address (e.g. %1)</source>
         <translation>YEN 주소를 입력하세요 (예 %1)</translation>
     </message>
     <message>
@@ -3763,7 +3763,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>분할 블록 도구는 여러 주소에서 작동하지 않습니다. 다시 시도하십시오.</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
+        <source>Warning: Invalid YENC address</source>
         <translation>경고: 잘못된 YEN 주소</translation>
     </message>
     <message>
@@ -3862,7 +3862,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지불 &amp;대상:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
+        <source>The YENC address to send the payment to</source>
         <translation>보낼 YEN 주소</translation>
     </message>
     <message>
@@ -3952,7 +3952,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자신의 주소로 메세지에 서명할 수 있습니다. 피싱 공격으로 사용자를 속일 수 있으므로 서명에 주의해주세요. 동의하는 바에 한하여 서명하십시오.</translation>
     </message>
     <message>
-        <source>The YEN address to sign the message with</source>
+        <source>The YENC address to sign the message with</source>
         <translation>메세지를 서명하기 위한 YEN 주소</translation>
     </message>
     <message>
@@ -3984,15 +3984,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
+        <source>Sign the message to prove you own this YENC address</source>
         <translation>이 YEN 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
     </message>
     <message>
-        <source>The YEN address the message was signed with</source>
+        <source>The YENC address the message was signed with</source>
         <translation>메세지에 서명된 YEN 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified YEN address</source>
+        <source>Verify the message to ensure it was signed with the specified YENC address</source>
         <translation>메세지가 지정된 YEN 주소로 서명되었는지 확인해주세요</translation>
     </message>
     <message>

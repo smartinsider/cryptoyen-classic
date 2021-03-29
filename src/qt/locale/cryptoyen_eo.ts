@@ -62,11 +62,11 @@
         <translation>Ricevanta adresojn</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ĉi tiuj estas viaj YEN adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ĉi tiuj estas vian adreson por ricevi pagojn. Ĝi rekomendas uzi novajn ricenvantan adreson por ĉiu nova transakcio.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Eniri unu YEN adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
     </message>
     <message>
-        <source>The YEN address to encrypt</source>
+        <source>The YENC address to encrypt</source>
         <translation>Adreson por ĉifri</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Kopiu la aktualan subskribo al la sistemo-poŝo</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this YEN address</source>
+        <source>Encrypt the private key for this YENC address</source>
         <translation>Ĉifri la privata ŝlosilo por ĉi tiu YEN adreso</translation>
     </message>
     <message>
@@ -645,7 +645,7 @@
         <translation>YEN kerno</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>Sendu mono al YEN addreso</translation>
     </message>
     <message>
@@ -677,11 +677,11 @@
         <translation>Modifi agordajn opciojn por YEN</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
         <translation>Subskribu mesaĝo per via YEN adreso por pruvi vi posedas ĝin</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
         <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita YEN adreso</translation>
     </message>
     <message>
@@ -1153,7 +1153,7 @@ Muktisendi: %1</translation>
         <translation>Redaktu sendantan adreson</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
+        <source>The entered address "%1" is not a valid YENC address.</source>
         <translation>La enirita "%1" adreso ne estas validan YEN adreson.</translation>
     </message>
     <message>
@@ -1871,7 +1871,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Pagu &amp;Al:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The YENC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>YEN adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
     </message>
     <message>
@@ -2306,7 +2306,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Kopi ŝanĝo</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
+        <source>Warning: Invalid YENC address</source>
         <translation>Averto: nevalida YEN adreson</translation>
     </message>
     <message>
@@ -2333,7 +2333,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Pagu &amp;Al:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
+        <source>The YENC address to send the payment to</source>
         <translation>YENC adreso por sendi la pago al</translation>
     </message>
     <message>

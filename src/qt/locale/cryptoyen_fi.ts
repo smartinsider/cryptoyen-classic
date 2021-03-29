@@ -62,11 +62,11 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Nämä ovat sinun YEN osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Nämä ovat sinun YEN osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
@@ -569,7 +569,7 @@
         <translation>YEN Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>Lähetä kolikkoja YEN osoitteeseen</translation>
     </message>
     <message>
@@ -597,11 +597,11 @@
         <translation>Muokkaa konfiguraatio vaihtoehtoja YEN:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
         <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä YEN osoiteella.</translation>
     </message>
     <message>
@@ -1957,7 +1957,7 @@
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
+        <source>Warning: Invalid YENC address</source>
         <translation>Varoitus: Virheellinen YEN osoite</translation>
     </message>
     <message>
@@ -2008,7 +2008,7 @@
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
+        <source>The YENC address to send the payment to</source>
         <translation>YEN osoite johon maksu lähetetään</translation>
     </message>
     <message>
@@ -2070,7 +2070,7 @@
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The YEN address to sign the message with</source>
+        <source>The YENC address to sign the message with</source>
         <translation>YEN osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
@@ -2102,15 +2102,15 @@
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
+        <source>Sign the message to prove you own this YENC address</source>
         <translation>Allekirjoita viesti todistaaksesi, että omistat tämän YEN osoitteen</translation>
     </message>
     <message>
-        <source>The YEN address the message was signed with</source>
+        <source>The YENC address the message was signed with</source>
         <translation>YEN osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified YEN address</source>
+        <source>Verify the message to ensure it was signed with the specified YENC address</source>
         <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla YEN osoitteella.</translation>
     </message>
     <message>

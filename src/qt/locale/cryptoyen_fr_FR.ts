@@ -62,11 +62,11 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Voici vos adresses YEN pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Voici vos adresses YEN pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
@@ -258,7 +258,7 @@
         <translation>Entrez une adresse YEN que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
     </message>
     <message>
-        <source>The YEN address to encrypt</source>
+        <source>The YENC address to encrypt</source>
         <translation>L'adresse YEN à chiffrer</translation>
     </message>
     <message>
@@ -290,7 +290,7 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this YEN address</source>
+        <source>Encrypt the private key for this YENC address</source>
         <translation>Chiffrer la clef privée pour cette adresse YEN</translation>
     </message>
     <message>
@@ -657,7 +657,7 @@
         <translation>YEN Core</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>Envoyer des pièces à une adresse YEN</translation>
     </message>
     <message>
@@ -689,11 +689,11 @@
         <translation>Modifier les options de configuration pour YEN</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
         <translation>Signer les messages avec votre adresse YEN pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
         <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse YEN spécifiée</translation>
     </message>
     <message>
@@ -1181,7 +1181,7 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
+        <source>The entered address "%1" is not a valid YENC address.</source>
         <translation>L'adresse entrée "%1" n'est pas une adresse YEN valide</translation>
     </message>
     <message>
@@ -1467,8 +1467,8 @@ Adresse : %4
         <translation>Saisir l'adresse à laquelle envoyer</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YEN addresses after it matures.
-To Add: enter percentage to give and YEN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YENC addresses after it matures.
+To Add: enter percentage to give and YENC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses YEN  après leur maturité.
@@ -2353,7 +2353,7 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Impossible de démarrer cryptoyen: gestionnaire click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid YEN address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid YENC address or malformed URI parameters.</source>
         <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse YEN invalide ou à des paramètres URI incorrectes.</translation>
     </message>
     <message>
@@ -2551,7 +2551,7 @@ Les zYEN sont matures lorsqu'ils ont plus de 20 confirmations ET plus de 2 monna
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The YENC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>L'adresse YEN à laquelle envoyer le paiement. Le système créé un paiement à vous même lorsque ce champs est vide.</translation>
     </message>
     <message>
@@ -3076,7 +3076,7 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a YEN address (e.g. %1)</source>
+        <source>Enter a YENC address (e.g. %1)</source>
         <translation>Entrez une adresse YEN (par ex. %1)</translation>
     </message>
     <message>
@@ -4010,7 +4010,7 @@ S'il vous plaît soyez patient ...</translation>
         <translation>L'outil de séparation de bloc ne fonctionne pas avec les adresses multiples. Réessayez.</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
+        <source>Warning: Invalid YENC address</source>
         <translation>Attention: adresse YEN invalide</translation>
     </message>
     <message>
@@ -4113,7 +4113,7 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
+        <source>The YENC address to send the payment to</source>
         <translation>L'adresse YEN à laquelle envoyer le paiement</translation>
     </message>
     <message>
@@ -4203,7 +4203,7 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Vous pouvez signer des messages avec vos adresses pour prouver que vous les possédez. Veillez à ne rien signer d'imprécis, car des attaques de type phishing pourraient vous inciter à divulger votre identité. Ne signez que des déclarations détaillées que vous avez approuvé.</translation>
     </message>
     <message>
-        <source>The YEN address to sign the message with</source>
+        <source>The YENC address to sign the message with</source>
         <translation>L'adresse YEN avec laquelle signer le message</translation>
     </message>
     <message>
@@ -4235,15 +4235,15 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
+        <source>Sign the message to prove you own this YENC address</source>
         <translation>Signer le message pour prouver que vous possédez cette adresse YEN</translation>
     </message>
     <message>
-        <source>The YEN address the message was signed with</source>
+        <source>The YENC address the message was signed with</source>
         <translation>L'adresse YEN avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified YEN address</source>
+        <source>Verify the message to ensure it was signed with the specified YENC address</source>
         <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse YEN renseignée</translation>
     </message>
     <message>

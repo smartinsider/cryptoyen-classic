@@ -903,7 +903,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
             ui->labelCoinControlChangeLabel->setText("");
         } else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid YEN address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid YENC address"));
         } else // Valid address
         {
             CPubKey pubkey;

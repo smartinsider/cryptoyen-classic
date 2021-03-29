@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -258,8 +258,8 @@
         <translation>Enter a YEN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
-        <source>The YEN address to encrypt</source>
-        <translation>The YEN address to encrypt</translation>
+        <source>The YENC address to encrypt</source>
+        <translation>The YENC address to encrypt</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this YEN address</source>
-        <translation>Encrypt the private key for this YEN address</translation>
+        <source>Encrypt the private key for this YENC address</source>
+        <translation>Encrypt the private key for this YENC address</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -653,8 +653,8 @@
         <translation>YEN Core</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
-        <translation>Send coins to a YEN address</translation>
+        <source>Send coins to a YENC address</source>
+        <translation>Send coins to a YENC address</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and cryptoyen: URIs)</source>
@@ -685,12 +685,12 @@
         <translation>Modify configuration options for YEN</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
-        <translation>Sign messages with your YEN addresses to prove you own them</translation>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
+        <translation>Sign messages with your YENC addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
-        <translation>Verify messages to ensure they were signed with specified YEN addresses</translation>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
+        <translation>Verify messages to ensure they were signed with specified YENC addresses</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1189,8 +1189,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
-        <translation>The entered address "%1" is not a valid YEN address.</translation>
+        <source>The entered address "%1" is not a valid YENC address.</source>
+        <translation>The entered address "%1" is not a valid YENC address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1463,12 +1463,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YEN addresses after it matures.
-To Add: enter percentage to give and YEN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YENC addresses after it matures.
+To Add: enter percentage to give and YENC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YEN addresses after it matures.
-To Add: enter percentage to give and YEN address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other YENC addresses after it matures.
+To Add: enter percentage to give and YENC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -2345,8 +2345,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in cryptoyen.
         <translation>Cannot start cryptoyen: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid YEN address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid YEN address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid YENC address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid YENC address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2543,8 +2543,8 @@ zYEN are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>The YEN address to send the payment to. Creates local payment to yourself when empty.</translation>
+        <source>The YENC address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>The YENC address to send the payment to. Creates local payment to yourself when empty.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3065,8 +3065,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a YEN address (e.g. %1)</source>
-        <translation>Enter a YEN address (e.g. %1)</translation>
+        <source>Enter a YENC address (e.g. %1)</source>
+        <translation>Enter a YENC address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3975,8 +3975,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>The split block tool does not work with multiple addresses. Try again.</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
-        <translation>Warning: Invalid YEN address</translation>
+        <source>Warning: Invalid YENC address</source>
+        <translation>Warning: Invalid YENC address</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4082,8 +4082,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
-        <translation>The YEN address to send the payment to</translation>
+        <source>The YENC address to send the payment to</source>
+        <translation>The YENC address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4172,8 +4172,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The YEN address to sign the message with</source>
-        <translation>The YEN address to sign the message with</translation>
+        <source>The YENC address to sign the message with</source>
+        <translation>The YENC address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4204,16 +4204,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
-        <translation>Sign the message to prove you own this YEN address</translation>
+        <source>Sign the message to prove you own this YENC address</source>
+        <translation>Sign the message to prove you own this YENC address</translation>
     </message>
     <message>
-        <source>The YEN address the message was signed with</source>
-        <translation>The YEN address the message was signed with</translation>
+        <source>The YENC address the message was signed with</source>
+        <translation>The YENC address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified YEN address</source>
-        <translation>Verify the message to ensure it was signed with the specified YEN address</translation>
+        <source>Verify the message to ensure it was signed with the specified YENC address</source>
+        <translation>Verify the message to ensure it was signed with the specified YENC address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

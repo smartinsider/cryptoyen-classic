@@ -62,11 +62,11 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your YENC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Esses são seus endereços YEN para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your YEN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your YENC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Esses são seus endereços YEN para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
@@ -617,7 +617,7 @@
         <translation>YEN Core</translation>
     </message>
     <message>
-        <source>Send coins to a YEN address</source>
+        <source>Send coins to a YENC address</source>
         <translation>Enviar moedas para um endereço YEN</translation>
     </message>
     <message>
@@ -649,11 +649,11 @@
         <translation>Modificar opções de configuração para YEN</translation>
     </message>
     <message>
-        <source>Sign messages with your YEN addresses to prove you own them</source>
+        <source>Sign messages with your YENC addresses to prove you own them</source>
         <translation>Assine mensagens com seus endereços YEN para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified YEN addresses</source>
+        <source>Verify messages to ensure they were signed with specified YENC addresses</source>
         <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços YEN especificados</translation>
     </message>
     <message>
@@ -1118,7 +1118,7 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid YEN address.</source>
+        <source>The entered address "%1" is not a valid YENC address.</source>
         <translation>O endereço que você selecionou, "%1" , não é um endereço válido de YEN</translation>
     </message>
     <message>
@@ -1966,7 +1966,7 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The YENC address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>O endereço YEN para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
     </message>
     <message>
@@ -2144,7 +2144,7 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a YEN address (e.g. %1)</source>
+        <source>Enter a YENC address (e.g. %1)</source>
         <translation>Insira um endereço YEN (e.g. %1)</translation>
     </message>
     <message>
@@ -2798,7 +2798,7 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>Copiar troco</translation>
     </message>
     <message>
-        <source>Warning: Invalid YEN address</source>
+        <source>Warning: Invalid YENC address</source>
         <translation>Aviso: endereço YEN inválido</translation>
     </message>
     <message>
@@ -2885,7 +2885,7 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The YEN address to send the payment to</source>
+        <source>The YENC address to send the payment to</source>
         <translation>O endereço YEN para enviar o pagamento</translation>
     </message>
     <message>
@@ -2967,7 +2967,7 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The YEN address to sign the message with</source>
+        <source>The YENC address to sign the message with</source>
         <translation>O endereço YEN para assinar a mensagem</translation>
     </message>
     <message>
@@ -2999,15 +2999,15 @@ https://www.transifex.com/cryptoyen-project/cryptoyen-project-translations</tran
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this YEN address</source>
+        <source>Sign the message to prove you own this YENC address</source>
         <translation>Assine a mensagem para provar que você possui este endereço YEN</translation>
     </message>
     <message>
-        <source>The YEN address the message was signed with</source>
+        <source>The YENC address the message was signed with</source>
         <translation>O endereço YEN que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified YEN address</source>
+        <source>Verify the message to ensure it was signed with the specified YENC address</source>
         <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço YEN especificado.</translation>
     </message>
     <message>
