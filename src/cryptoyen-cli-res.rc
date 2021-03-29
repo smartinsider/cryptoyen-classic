@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "CryptoYen"
-            VALUE "FileDescription",    "CryptoYen-cli (OSS RPC client for CryptoYen)"
+            VALUE "CompanyName",        "CryptoYen classic"
+            VALUE "FileDescription",    "CryptoYen-cli (OSS RPC client for CryptoYen classic)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "cryptoyen-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR

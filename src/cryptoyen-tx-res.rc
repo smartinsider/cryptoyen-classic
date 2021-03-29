@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "YEN"
-            VALUE "FileDescription",    "cryptoyen-tx (CLI YEN transaction editor utility)"
+            VALUE "CompanyName",        "YENC"
+            VALUE "FileDescription",    "cryptoyen-tx (CLI YENC transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "cryptoyen-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

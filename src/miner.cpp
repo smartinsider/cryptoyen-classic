@@ -495,7 +495,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("YENMiner : generated block is stale");
+            return error("YENCMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -513,7 +513,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock)) {
-        return error("YENMiner : ProcessNewBlock, block not accepted");
+        return error("YENCMiner : ProcessNewBlock, block not accepted");
     }
 
     for (CNode* node : vNodes) {
@@ -535,7 +535,7 @@ int minPosTime = 0;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("YENMiner started\n");
+    LogPrintf("YENCMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("cryptoyen-miner");
 	

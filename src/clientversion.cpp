@@ -16,7 +16,7 @@
  * for both cryptoyend and cryptoyen-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("YEN Core");
+const std::string CLIENT_NAME("YENC Core");
 
 /**
  * Client version number
