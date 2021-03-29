@@ -59,22 +59,22 @@ QString BitcoinUnits::name(int unit)
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
         case THEYEN:
-            return QString("YEN");
+            return QString("YENC");
         case mYEN:
-            return QString("mYEN");
+            return QString("mYENC");
         case uYEN:
-            return QString::fromUtf8("μYEN");
+            return QString::fromUtf8("μYENC");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case THEYEN:
-            return QString("tYEN");
+            return QString("tYENC");
         case mYEN:
-            return QString("mtYEN");
+            return QString("mtYENC");
         case uYEN:
-            return QString::fromUtf8("μtYEN");
+            return QString::fromUtf8("μtYENC");
         default:
             return QString("???");
         }
@@ -86,7 +86,7 @@ QString BitcoinUnits::description(int unit)
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
         case THEYEN:
-            return QString("YEN");
+            return QString("YENC");
         case mYEN:
             return QString("Milli-YEN (1 / 1" THIN_SP_UTF8 "000)");
         case uYEN:
@@ -97,7 +97,7 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case THEYEN:
-            return QString("TestYENs");
+            return QString("TestYENCs");
         case mYEN:
             return QString("Milli-TestYEN (1 / 1" THIN_SP_UTF8 "000)");
         case uYEN:

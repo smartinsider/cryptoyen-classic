@@ -308,7 +308,7 @@ QT_TRANSLATE_NOOP("cryptoyen-core", "Error initializing wallet database environm
 QT_TRANSLATE_NOOP("cryptoyen-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("cryptoyen-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("cryptoyen-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("cryptoyen-core", "Error loading wallet.dat: Wallet requires newer version of YEN Core"),
+QT_TRANSLATE_NOOP("cryptoyen-core", "Error loading wallet.dat: Wallet requires newer version of YENC Core"),
 QT_TRANSLATE_NOOP("cryptoyen-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("cryptoyen-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("cryptoyen-core", "Error recovering public key."),

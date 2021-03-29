@@ -1830,7 +1830,7 @@ MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting YEN.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "YEN".</translation>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "YENC".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
