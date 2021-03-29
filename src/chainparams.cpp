@@ -141,7 +141,7 @@ public:
 
 
 
-        const char* pszTimestamp = "Sat, 23 Mar 2019 09:28:53 +0000. CryptoYen classic developer @SmartInsider";
+        const char* pszTimestamp = "Sat, 23 Mar 2019 09:28:53 +0000. CryptoYen developer @SmartInsider";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);

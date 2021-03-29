@@ -1162,7 +1162,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "YEN " + FormatFullVersion();
+        string strDesc = "YENC " + FormatFullVersion();
 
         try {
             while (true) {
