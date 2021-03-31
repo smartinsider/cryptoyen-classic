@@ -34,9 +34,6 @@ bool CMasternodeSync::IsBlockchainSynced()
 {
     static bool fBlockchainSynced = false;
     static int64_t lastProcess = GetTime();
-
-
-    // @SMARTINSIDER+DIVINELIFE
     static int64_t SleapModeTime = 1; // def is 1
     
     //  if the last call to this function was more than 1h ago (client was in sleep mode) reset the sync process

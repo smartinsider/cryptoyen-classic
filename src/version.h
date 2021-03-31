@@ -10,11 +10,6 @@
 #ifndef BITCOIN_VERSION_H
 #define BITCOIN_VERSION_H
 
-/**
- * network protocol versioning
- * @SMARTINSIDER+DIVINELIFE
- */
-
 static const int PROTOCOL_VERSION = 70933;
 
 //! initial proto version, to be increased after version/verack negotiation

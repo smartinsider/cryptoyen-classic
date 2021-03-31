@@ -161,14 +161,15 @@ public:
         assert(genesis.hashMerkleRoot == uint256("3bbfa4b9fe24355127acdd9ebe919cde06fed041f7f0128623c4e61e743bf338"));
 		
 		//STABILE IP
-        vSeeds.push_back(CDNSSeedData("ns1.cryptoyen.icu", "ns1.divinelife.club"));
-        vSeeds.push_back(CDNSSeedData("ns2.cryptoyen.icu", "ns2.divinelife.club"));
-        vSeeds.push_back(CDNSSeedData("ns3.cryptoyen.icu", "ns3.divinelife.club"));
-        vSeeds.push_back(CDNSSeedData("ns4.cryptoyen.icu", "ns4.divinelife.club"));
+        vSeeds.push_back(CDNSSeedData("node1.cryptoyen.icu", "node1.cryptoyen.icu"));
+        vSeeds.push_back(CDNSSeedData("node2.cryptoyen.icu", "node2.cryptoyen.icu"));
+        vSeeds.push_back(CDNSSeedData("node3.cryptoyen.icu", "node3.cryptoyen.icu"));
+        vSeeds.push_back(CDNSSeedData("node4.cryptoyen.icu", "node4.cryptoyen.icu"));
 
-	    //DNS SEEDS
-        vSeeds.push_back(CDNSSeedData("divinelife.club", "seeder1.divinelife.club"));
-        vSeeds.push_back(CDNSSeedData("divinelife.club", "seeder2.divinelife.club"));
+        vSeeds.push_back(CDNSSeedData("node1.sakura.exchange", "node1.sakura.exchange"));
+        vSeeds.push_back(CDNSSeedData("node2.sakura.exchange", "node2.sakura.exchange"));
+        vSeeds.push_back(CDNSSeedData("node3.sakura.exchange", "node3.sakura.exchange"));
+        vSeeds.push_back(CDNSSeedData("node4.sakura.exchange", "node4.sakura.exchange"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 78);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 100);
