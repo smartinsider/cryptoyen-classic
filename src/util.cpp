@@ -531,7 +531,15 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             strHeader += "\nrpcpassword=";
             strHeader += rpc_passwd;
             strHeader += "\nforcednsseed=1";
-			strHeader += "\nrpcallowip=127.0.0.1";
+            strHeader += "\nrpcallowip=127.0.0.1";
+            strHeader += "\naddnode=node1.cryptoyen.icu";
+            strHeader += "\naddnode=node2.cryptoyen.icu";
+            strHeader += "\naddnode=node3.cryptoyen.icu";
+            strHeader += "\naddnode=node4.cryptoyen.icu";
+            strHeader += "\naddnode=node1.sakura.exchange";
+            strHeader += "\naddnode=node2.sakura.exchange";
+            strHeader += "\naddnode=node3.sakura.exchange";
+            strHeader += "\naddnode=node4.sakura.exchange";
             strHeader += "\nlisten=1";
             strHeader += "\ntxindex=1\ncryptoyenstake=1\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
